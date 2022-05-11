@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>Ecoman website coming soon</p>
-        <p>Powered by Tanmay P.</p>
+        <p>Developed and Powered by Tanmay P.</p>
       </header>
     </div>
   );
