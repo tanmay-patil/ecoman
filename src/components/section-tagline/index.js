@@ -7,6 +7,7 @@ import { isMobile } from "react-device-detect";
 function SectionTagline() {
   return (
     <Section className="section-tagline-main">
+      <div className="plain-background"></div>
       <Fade top>
         <img
           src={isMobile ? leaves3 : leaves2}
@@ -20,12 +21,12 @@ function SectionTagline() {
         </Fade>
       </div>
       <div className="right-section">
-        <Fade right>
-          <p className="title1">INDIA'S LEADING</p>
-        </Fade>
-        <Fade top>
-          <p className="title2">WASTE MANAGER</p>
-        </Fade>
+        {/* <Fade right> */}
+        <p className="title1">INDIA'S LEADING</p>
+        {/* </Fade> */}
+        {/* <Fade top> */}
+        <p className="title2">WASTE MANAGER</p>
+        {/* </Fade> */}
       </div>
     </Section>
   );

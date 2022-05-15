@@ -5,18 +5,19 @@ import HeaderBar from "components/header-bar";
 import SectionTagline from "components/section-tagline";
 import SectionHeadline from "components/section-headline";
 import { useEffect, useRef } from "react";
+import SectionVision from "components/section-vision";
 
 function App() {
   const taglineSectionRef = useRef(null);
+  const visionSectionRef = useRef(null);
 
   useEffect(() => {
     setTimeout(() => {
-      executeScroll();
+      executeInitialScroll();
     }, 2000);
   }, []);
 
-  const executeScroll = () => {
-    // taglineSectionRef.current.scrollIntoView({ behavior: "smooth" })
+  const executeInitialScroll = () => {
     window.scrollTo({
       behavior: "smooth",
       top: taglineSectionRef.current.offsetTop - 80,
@@ -27,9 +28,17 @@ function App() {
     <>
       <HeaderBar />
       <div className="app-main">
-        <SectionHeadline />
-        <div ref={taglineSectionRef}></div>
-        <SectionTagline ref={taglineSectionRef} />
+        <section>
+          <SectionHeadline />
+        </section>
+        <div ref={taglineSectionRef} />
+        <section>
+          <SectionTagline />
+        </section>
+        <div ref={visionSectionRef} />
+        <section>
+          <SectionVision />
+        </section>
       </div>
 
       <FooterBar />

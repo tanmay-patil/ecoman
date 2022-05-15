@@ -1,0 +1,38 @@
+@use "variables";
+@import "mixins";
+
+.section-vision-main {
+  background: #0f150f;
+
+  @include mobile {
+    .title {
+      font-family: TitiliumWeb-Light;
+      font-size: 30px;
+      color: #449841;
+      text-align: center;
+    }
+
+    .subtitle {
+      font-family: TitiliumWeb-Light;
+      font-size: 50px;
+      color: #bdc2bd;
+      text-align: center;
+    }
+  }
+
+  @include desktop {
+    .title {
+      font-family: TitiliumWeb-Light;
+      font-size: 40px;
+      color: #449841;
+      text-align: center;
+    }
+
+    .subtitle {
+      font-family: TitiliumWeb-Light;
+      font-size: 70px;
+      color: #bdc2bd;
+      text-align: center;
+    }
+  }
+}
