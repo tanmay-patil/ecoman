@@ -16,7 +16,11 @@ function App() {
   }, []);
 
   const executeScroll = () => {
-    taglineSectionRef.current.scrollIntoView({ behavior: "smooth" });
+    // taglineSectionRef.current.scrollIntoView({ behavior: "smooth" })
+    window.scrollTo({
+      behavior: "smooth",
+      top: taglineSectionRef.current.offsetTop - 80,
+    });
   };
 
   return (
