@@ -2,8 +2,7 @@ import "./index.scss";
 import { machine, leaves2, leaves3 } from "common/common-imports";
 import Section from "components/section";
 import { Fade } from "react-reveal";
-import { isMobile, MobileView } from "react-device-detect";
-import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import { isMobile } from "react-device-detect";
 
 function SectionTagline() {
   return (
@@ -25,14 +24,6 @@ function SectionTagline() {
         <p className="title1">INDIA'S LEADING</p>
         <p className="title2">WASTE MANAGER</p>
       </div>
-
-      <MobileView>
-        <a href="#section-vision">
-          <div className="arrow-container">
-            <ArrowDownwardIcon />
-          </div>
-        </a>
-      </MobileView>
     </Section>
   );
 }
