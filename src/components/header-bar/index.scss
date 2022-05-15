@@ -1,0 +1,45 @@
+@use "variables";
+@import "mixins";
+
+.header-bar-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #f4f4f4;
+
+  @include desktop {
+    padding: 25px;
+    .img-logo {
+      height: 55px;
+    }
+
+    .menu {
+      display: flex;
+
+      .item {
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: variables.$font-size-medium;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+  @include mobile {
+    padding-top: 20px;
+    padding-bottom: 17px;
+
+    .img-logo {
+      height: 35px;
+      margin-left: 20px;
+    }
+
+    .menu-button {
+      color: #4db848;
+      margin-right: 20px;
+    }
+  }
+}

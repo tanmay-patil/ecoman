@@ -1,0 +1,14 @@
+@use "variables";
+
+body {
+  font-family: TitiliumWeb;
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  a:hover {
+    color: variables.$color-product-green;
+  }
+}

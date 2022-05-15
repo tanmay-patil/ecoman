@@ -1,15 +1,22 @@
-import logo from "./logo.svg";
-import "./App.css";
+import "App.css";
+import "App.scss";
+import { logo } from "common/common-imports";
+import FooterBar from "components/footber-bar";
+import HeaderBar from "components/header-bar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Ecoman website coming soon</p>
-        <p>Developed and Powered by Tanmay P.</p>
-      </header>
-    </div>
+    <>
+      <HeaderBar />
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>Website under construction</p>
+        </header>
+      </div>
+
+      <FooterBar />
+    </>
   );
 }
 

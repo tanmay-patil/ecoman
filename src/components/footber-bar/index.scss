@@ -1,0 +1,24 @@
+@use "variables";
+@import "mixins";
+
+.footer-bar-main {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #171717;
+  color: #a2a2a2;
+
+  @include mobile {
+    height: 35px;
+    width: 100%;
+    font-size: 12px;
+  }
+
+  @include desktop {
+    height: 40px;
+    width: 100%;
+    font-size: 14px;
+  }
+}
