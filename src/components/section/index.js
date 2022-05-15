@@ -8,6 +8,7 @@ function Section({
   className = "",
   flex,
   spaceBetween = false,
+  id,
 }) {
   const styles = {};
   const className_ = className ? `${className} section-main` : "section-main";
@@ -24,7 +25,7 @@ function Section({
   }
 
   return (
-    <section>
+    <section id={id}>
       <div style={{ ...styles }} className={className_}>
         {children}
       </div>

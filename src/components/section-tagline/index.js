@@ -6,7 +6,7 @@ import { isMobile } from "react-device-detect";
 
 function SectionTagline() {
   return (
-    <Section className="section-tagline-main">
+    <Section id={"section-tagline"} className="section-tagline-main">
       <div className="plain-background"></div>
       <Fade top>
         <img

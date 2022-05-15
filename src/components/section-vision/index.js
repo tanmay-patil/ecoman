@@ -6,7 +6,7 @@ import { isMobile } from "react-device-detect";
 
 function SectionVision() {
   return (
-    <Section className="section-vision-main" center>
+    <Section id={"section-vision"} className="section-vision-main" center>
       <Fade left>
         <p className="title">VISION</p>
       </Fade>

@@ -15,7 +15,28 @@ import Fade from "react-reveal/Fade";
 function HeaderBar() {
   const [toggleDrawer, setToggleDrawer] = useState(false);
 
-  const menuItems = ["Highlights", "About Us", "Contact Us"];
+  const menuItems = [
+    {
+      id: "home",
+      displayText: "Home",
+      href: "#section-headline",
+    },
+    {
+      id: "clients",
+      displayText: "Clients",
+      href: "#section-clients",
+    },
+    {
+      id: "vision",
+      displayText: "Vision",
+      href: "#section-vision",
+    },
+    {
+      id: "tagline",
+      displayText: "Tagline",
+      href: "#section-tagline",
+    },
+  ];
 
   return (
     <Fade top>
@@ -37,9 +58,9 @@ function HeaderBar() {
           <BrowserView>
             <Fade right cascade>
               <div className="menu">
-                {menuItems.map((text) => (
+                {menuItems.map((item) => (
                   <div className="item">
-                    <a>{text}</a>
+                    <a href={item.href}>{item.displayText}</a>
                   </div>
                 ))}
               </div>
@@ -59,12 +80,14 @@ function HeaderBar() {
             onKeyDown={() => setToggleDrawer(false)}
           >
             <List>
-              {menuItems.map((text) => (
-                <ListItem key={text} disablePadding>
-                  <ListItemButton>
-                    <ListItemText primary={text} />
-                  </ListItemButton>
-                </ListItem>
+              {menuItems.map((item) => (
+                <a href={item.href}>
+                  <ListItem key={item.displayText} disablePadding>
+                    <ListItemButton>
+                      <ListItemText primary={item.displayText} />
+                    </ListItemButton>
+                  </ListItem>
+                </a>
               ))}
             </List>
           </Box>

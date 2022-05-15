@@ -82,7 +82,11 @@ function SectionClients() {
 
   return (
     <>
-      <Section className="section-clients-main" center={!isMobile}>
+      <Section
+        id={"section-clients"}
+        className="section-clients-main"
+        center={!isMobile}
+      >
         <Fade left>
           <p className="title">INDUSTRIAL CLIENTELE</p>
         </Fade>

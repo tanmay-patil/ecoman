@@ -5,7 +5,7 @@ import { Fade } from "react-reveal";
 
 function SectionHeadline() {
   return (
-    <Section className="section-headline-main" center>
+    <Section id={"section-headline"} className="section-headline-main" center>
       <div className="left-section">
         <Fade>
           <img src={logo} className="img-logo" alt="Machine" />
