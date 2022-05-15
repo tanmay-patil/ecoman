@@ -18,6 +18,13 @@
       color: #bdc2bd;
       text-align: center;
     }
+
+    .img-leaves {
+      position: absolute;
+      top: 75px;
+      right: 0;
+      height: 200px;
+    }
   }
 
   @include desktop {
@@ -33,6 +40,11 @@
       font-size: 70px;
       color: #bdc2bd;
       text-align: center;
+    }
+
+    .img-leaves {
+      position: absolute;
+      top: 90px;
     }
   }
 }
