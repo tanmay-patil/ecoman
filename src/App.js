@@ -6,6 +6,7 @@ import SectionTagline from "components/section-tagline";
 import SectionHeadline from "components/section-headline";
 import { useEffect, useRef } from "react";
 import SectionVision from "components/section-vision";
+import SectionClients from "components/section-clients";
 
 function App() {
   const taglineSectionRef = useRef(null);
@@ -28,17 +29,12 @@ function App() {
     <>
       <HeaderBar />
       <div className="app-main">
-        <section>
-          <SectionHeadline />
-        </section>
+        <SectionHeadline />
         <div ref={taglineSectionRef} />
-        <section>
-          <SectionTagline />
-        </section>
+        <SectionTagline />
         <div ref={visionSectionRef} />
-        <section>
-          <SectionVision />
-        </section>
+        <SectionVision />
+        <SectionClients />
       </div>
 
       <FooterBar />

@@ -24,9 +24,11 @@ function Section({
   }
 
   return (
-    <div style={{ ...styles }} className={className_}>
-      {children}
-    </div>
+    <section>
+      <div style={{ ...styles }} className={className_}>
+        {children}
+      </div>
+    </section>
   );
 }
 

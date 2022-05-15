@@ -1,0 +1,45 @@
+@use "variables";
+@import "mixins";
+
+.section-clients-main {
+  background: #ffffff;
+
+  @include mobile {
+    overflow: auto;
+
+    .title {
+      font-family: TitiliumWeb-Light;
+      font-size: 30px;
+      color: #449841;
+      text-align: center;
+      margin-top: 120px;
+    }
+
+    .img-client {
+      margin: 25px;
+      max-width: 70px;
+    }
+
+    .clients-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+  }
+
+  @include desktop {
+    .title {
+      font-family: TitiliumWeb-Light;
+      font-size: 40px;
+      color: #449841;
+      text-align: center;
+      margin-top: 130px;
+    }
+
+    .img-client {
+      height: 70px;
+      margin: 60px;
+    }
+  }
+}
