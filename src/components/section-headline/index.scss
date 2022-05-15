@@ -1,0 +1,18 @@
+@use "variables";
+@import "mixins";
+
+.section-headline-main {
+  background: #0f150f;
+
+  @include mobile {
+    .img-logo {
+      height: 100px;
+    }
+  }
+
+  @include desktop {
+    .img-logo {
+      height: 100px;
+    }
+  }
+}

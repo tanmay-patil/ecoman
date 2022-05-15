@@ -1,0 +1,16 @@
+@use "variables";
+@import "mixins";
+
+.section-main {
+  background: #eae9e5;
+  height: 88vh;
+  width: 100%;
+
+  @include mobile {
+    margin-bottom: 20px;
+  }
+
+  @include desktop {
+    margin-bottom: 50px;
+  }
+}

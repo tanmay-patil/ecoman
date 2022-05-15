@@ -18,54 +18,59 @@ function HeaderBar() {
   const menuItems = ["Highlights", "About Us", "Contact Us"];
 
   return (
-    <div className="header-bar-main">
-      <div className="left-container">
-        <Fade left>
-          <img src={logo} className="img-logo" alt="logo" />
-        </Fade>
-      </div>
-      <div className="right-container">
-        <MobileView>
-          <Button className="menu-button" onClick={() => setToggleDrawer(true)}>
-            <MenuIcon />
-          </Button>
-        </MobileView>
-        <BrowserView>
-          <Fade right cascade>
-            <div className="menu">
-              {menuItems.map((text) => (
-                <div className="item">
-                  <a>{text}</a>
-                </div>
-              ))}
-            </div>
+    <Fade top>
+      <div className="header-bar-main">
+        <div className="left-container">
+          <Fade left>
+            <img src={logo} className="img-logo" alt="logo" />
           </Fade>
-        </BrowserView>
-      </div>
+        </div>
+        <div className="right-container">
+          <MobileView>
+            <Button
+              className="menu-button"
+              onClick={() => setToggleDrawer(true)}
+            >
+              <MenuIcon />
+            </Button>
+          </MobileView>
+          <BrowserView>
+            <Fade right cascade>
+              <div className="menu">
+                {menuItems.map((text) => (
+                  <div className="item">
+                    <a>{text}</a>
+                  </div>
+                ))}
+              </div>
+            </Fade>
+          </BrowserView>
+        </div>
 
-      <Drawer
-        anchor={"right"}
-        open={toggleDrawer}
-        onClose={() => setToggleDrawer(false)}
-      >
-        <Box
-          sx={{ width: 250 }}
-          role="presentation"
-          onClick={() => setToggleDrawer(false)}
-          onKeyDown={() => setToggleDrawer(false)}
+        <Drawer
+          anchor={"right"}
+          open={toggleDrawer}
+          onClose={() => setToggleDrawer(false)}
         >
-          <List>
-            {menuItems.map((text) => (
-              <ListItem key={text} disablePadding>
-                <ListItemButton>
-                  <ListItemText primary={text} />
-                </ListItemButton>
-              </ListItem>
-            ))}
-          </List>
-        </Box>
-      </Drawer>
-    </div>
+          <Box
+            sx={{ width: 250 }}
+            role="presentation"
+            onClick={() => setToggleDrawer(false)}
+            onKeyDown={() => setToggleDrawer(false)}
+          >
+            <List>
+              {menuItems.map((text) => (
+                <ListItem key={text} disablePadding>
+                  <ListItemButton>
+                    <ListItemText primary={text} />
+                  </ListItemButton>
+                </ListItem>
+              ))}
+            </List>
+          </Box>
+        </Drawer>
+      </div>
+    </Fade>
   );
 }
 

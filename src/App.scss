@@ -1,4 +1,5 @@
 @use "variables";
+@import "mixins";
 
 body {
   font-family: TitiliumWeb;
@@ -10,5 +11,24 @@ body {
 
   a:hover {
     color: variables.$color-product-green;
+  }
+
+  p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+}
+
+@include mobile {
+  .app-main {
+    margin-top: 78px;
+    margin-bottom: 40px;
+  }
+}
+
+@include desktop {
+  .app-main {
+    margin-top: 91px;
+    margin-bottom: 40px;
   }
 }

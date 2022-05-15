@@ -1,22 +1,31 @@
-import "App.css";
+import "fonts.css";
 import "App.scss";
-import { logo } from "common/common-imports";
 import FooterBar from "components/footber-bar";
 import HeaderBar from "components/header-bar";
-import { Fade } from "react-reveal";
+import SectionTagline from "components/section-tagline";
+import SectionHeadline from "components/section-headline";
+import { useEffect, useRef } from "react";
 
 function App() {
+  const taglineSectionRef = useRef(null);
+
+  useEffect(() => {
+    setTimeout(() => {
+      executeScroll();
+    }, 2000);
+  }, []);
+
+  const executeScroll = () => {
+    taglineSectionRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <HeaderBar />
-
-      <div className="App">
-        <header className="App-header">
-          <Fade bottom>
-            <img src={logo} className="App-logo" alt="logo" />
-            <p>Website under construction</p>
-          </Fade>
-        </header>
+      <div className="app-main">
+        <SectionHeadline />
+        <div ref={taglineSectionRef}></div>
+        <SectionTagline ref={taglineSectionRef} />
       </div>
 
       <FooterBar />

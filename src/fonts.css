@@ -1,0 +1,23 @@
+@font-face {
+  font-family: TitiliumWeb-Light;
+  src: local("TitiliumWeb"),
+    url(./assets/fonts/Titillium/TitilliumWeb-Light.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: TitiliumWeb;
+  src: local("TitiliumWeb"),
+    url(./assets/fonts/Titillium/TitilliumWeb-Regular.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: TitiliumWeb-SemiBold;
+  src: local("TitiliumWeb"),
+    url(./assets/fonts/Titillium/TitilliumWeb-SemiBold.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: TitiliumWeb-Bold;
+  src: local("TitiliumWeb"),
+    url(./assets/fonts/Titillium/TitilliumWeb-Bold.ttf) format("opentype");
+}
