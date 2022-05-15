@@ -26,6 +26,10 @@
         letter-spacing: 1px;
       }
     }
+
+    .right-container {
+      margin-right: 60px;
+    }
   }
 
   @include mobile {
