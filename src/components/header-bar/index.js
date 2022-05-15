@@ -6,14 +6,11 @@ import { logo } from "common/common-imports";
 import Drawer from "@mui/material/Drawer";
 import Box from "@mui/material/Box";
 import List from "@mui/material/List";
-import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
 import { useState } from "react";
+import Fade from "react-reveal/Fade";
 
 function HeaderBar() {
   const [toggleDrawer, setToggleDrawer] = useState(false);
@@ -23,7 +20,9 @@ function HeaderBar() {
   return (
     <div className="header-bar-main">
       <div className="left-container">
-        <img src={logo} className="img-logo" alt="logo" />
+        <Fade left>
+          <img src={logo} className="img-logo" alt="logo" />
+        </Fade>
       </div>
       <div className="right-container">
         <MobileView>
@@ -32,13 +31,15 @@ function HeaderBar() {
           </Button>
         </MobileView>
         <BrowserView>
-          <div className="menu">
-            {menuItems.map((text) => (
-              <div className="item">
-                <a>{text}</a>
-              </div>
-            ))}
-          </div>
+          <Fade right cascade>
+            <div className="menu">
+              {menuItems.map((text) => (
+                <div className="item">
+                  <a>{text}</a>
+                </div>
+              ))}
+            </div>
+          </Fade>
         </BrowserView>
       </div>
 

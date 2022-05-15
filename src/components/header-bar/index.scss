@@ -11,9 +11,12 @@
   background-color: #f4f4f4;
 
   @include desktop {
-    padding: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
     .img-logo {
       height: 55px;
+      margin-left: 50px;
     }
 
     .menu {
