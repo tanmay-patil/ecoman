@@ -23,7 +23,7 @@ import {
   client19,
   client20,
 } from "common/industrial-clients";
-import { isMobile } from "react-device-detect";
+import { isMobile, MobileView } from "react-device-detect";
 import {
   govt_client1,
   govt_client2,
@@ -39,6 +39,7 @@ import {
   govt_client12,
   govt_client13,
 } from "common/govt-clients";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
 function SectionClients() {
   const industrialClients = [
@@ -104,9 +105,21 @@ function SectionClients() {
             );
           })}
         </div>
+
+        <MobileView>
+          <a href="#section-govtClients">
+            <div className="arrow-container">
+              <ArrowDownwardIcon />
+            </div>
+          </a>
+        </MobileView>
       </Section>
 
-      <Section className="section-clients-main" center={!isMobile}>
+      <Section
+        id="section-govtClients"
+        className="section-clients-main"
+        center={!isMobile}
+      >
         <Fade left>
           <p className="title">GOVERNMENT CLIENTELE</p>
         </Fade>

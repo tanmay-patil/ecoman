@@ -52,6 +52,24 @@
       height: 68%;
       bottom: 0;
     }
+
+    a {
+      z-index: 2;
+    }
+
+    .arrow-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+
+      svg {
+        height: 50px;
+        width: 50px;
+        color: #449841;
+      }
+    }
   }
 
   @include desktop {

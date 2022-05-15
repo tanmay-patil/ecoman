@@ -24,8 +24,21 @@
 
     .clients-container {
       margin-top: 30px;
-      max-height: 500px;
+      max-height: 350px;
       overflow: scroll;
+    }
+
+    .arrow-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 100px;
+
+      svg {
+        height: 50px;
+        width: 50px;
+      }
     }
   }
 

@@ -2,7 +2,8 @@ import "./index.scss";
 import Section from "components/section";
 import { leaves1, leaves3 } from "common/common-imports";
 import { Fade } from "react-reveal";
-import { isMobile } from "react-device-detect";
+import { isMobile, MobileView } from "react-device-detect";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
 function SectionVision() {
   return (
@@ -20,6 +21,13 @@ function SectionVision() {
           alt="Leaves"
         />
       </Fade>
+      <MobileView>
+        <a href="#section-clients">
+          <div className="arrow-container">
+            <ArrowDownwardIcon />
+          </div>
+        </a>
+      </MobileView>
     </Section>
   );
 }
