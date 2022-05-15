@@ -89,12 +89,14 @@ function SectionClients() {
         <div className="clients-container">
           {industrialClients.map((client, index) => {
             return (
-              <img
-                key={index}
-                className="img-client"
-                src={client}
-                alt="Client"
-              />
+              <div className="img-container">
+                <img
+                  key={index}
+                  className="img-client"
+                  src={client}
+                  alt="Client"
+                />
+              </div>
             );
           })}
         </div>
@@ -107,12 +109,14 @@ function SectionClients() {
         <div className="clients-container">
           {govtClients.map((client, index) => {
             return (
-              <img
-                key={index}
-                className="img-client"
-                src={client}
-                alt="Client"
-              />
+              <div className="img-container">
+                <img
+                  key={index}
+                  className="img-client"
+                  src={client}
+                  alt="Client"
+                />
+              </div>
             );
           })}
         </div>

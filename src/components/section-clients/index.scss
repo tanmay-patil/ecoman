@@ -37,9 +37,20 @@
       margin-top: 130px;
     }
 
+    .img-container {
+      padding: 60px;
+      display: inline-block;
+
+      &:hover {
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+        border-radius: 15px;
+        transition: 0.5s;
+      }
+    }
+
     .img-client {
       height: 70px;
-      margin: 60px;
+      transition: 0.5s;
     }
   }
 }
