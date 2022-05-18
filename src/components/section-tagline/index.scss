@@ -75,7 +75,7 @@
   @include desktop {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: center;
 
     .left-section {
@@ -83,7 +83,7 @@
     }
 
     .right-section {
-      padding-right: 50px;
+      padding-left: 100px;
 
       .title1 {
         font-family: TitiliumWeb-Light;

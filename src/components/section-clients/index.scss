@@ -43,6 +43,13 @@
   }
 
   @include desktop {
+    .clients-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+
     .title {
       font-family: TitiliumWeb-Light;
       font-size: 40px;
@@ -52,7 +59,7 @@
     }
 
     .img-container {
-      padding: 60px;
+      padding: 20px;
       display: inline-block;
 
       &:hover {
@@ -63,7 +70,7 @@
     }
 
     .img-client {
-      height: 70px;
+      height: 110px;
       transition: 0.5s;
     }
   }
