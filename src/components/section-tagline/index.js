@@ -21,7 +21,7 @@ function SectionTagline() {
         </Fade>
       </div>
       <div className="right-section">
-        <p className="title1">INDIA'S LEADING</p>
+        <p className="title1">INDIA KA</p>
         <p className="title2">WASTE MANAGER</p>
       </div>
     </Section>

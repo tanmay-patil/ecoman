@@ -1,0 +1,37 @@
+@use "variables";
+@import "mixins";
+
+.loader-container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: #ffffffd1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@include mobile {
+  .img-logo {
+    position: absolute;
+    height: 50px;
+  }
+
+  .img-loader {
+    height: 300px;
+  }
+}
+
+@include desktop {
+  .img-logo {
+    position: absolute;
+    height: 80px;
+  }
+
+  .img-loader {
+    height: 500px;
+  }
+}
