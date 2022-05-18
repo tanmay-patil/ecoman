@@ -15,23 +15,27 @@
 }
 
 @include mobile {
-  .img-logo {
-    position: absolute;
-    height: 50px;
-  }
+  .loader-container {
+    .img-logo {
+      position: absolute;
+      height: 50px;
+    }
 
-  .img-loader {
-    height: 300px;
+    .img-loader {
+      height: 300px;
+    }
   }
 }
 
 @include desktop {
-  .img-logo {
-    position: absolute;
-    height: 80px;
-  }
+  .loader-container {
+    .img-logo {
+      position: absolute;
+      height: 80px;
+    }
 
-  .img-loader {
-    height: 500px;
+    .img-loader {
+      height: 500px;
+    }
   }
 }
