@@ -94,14 +94,16 @@ function SectionClients() {
         <div className="clients-container">
           {industrialClients.map((client, index) => {
             return (
-              <div className="img-container">
-                <img
-                  key={index}
-                  className="img-client"
-                  src={client}
-                  alt="Client"
-                />
-              </div>
+              <Fade left duration={500 + (index + 1) * 100}>
+                <div className="img-container">
+                  <img
+                    key={index}
+                    className="img-client"
+                    src={client}
+                    alt="Client"
+                  />
+                </div>
+              </Fade>
             );
           })}
         </div>
@@ -126,14 +128,16 @@ function SectionClients() {
         <div className="clients-container">
           {govtClients.map((client, index) => {
             return (
-              <div className="img-container">
-                <img
-                  key={index}
-                  className="img-client"
-                  src={client}
-                  alt="Client"
-                />
-              </div>
+              <Fade right duration={500 + (index + 1) * 100}>
+                <div className="img-container">
+                  <img
+                    key={index}
+                    className="img-client"
+                    src={client}
+                    alt="Client"
+                  />
+                </div>
+              </Fade>
             );
           })}
         </div>
