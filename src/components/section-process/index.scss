@@ -5,6 +5,8 @@
   background: #e5e8e7;
 
   @include mobile {
+    min-height: 89vh;
+
     .title {
       font-family: TitiliumWeb-Light;
       font-size: 30px;
@@ -20,7 +22,8 @@
   }
 
   @include desktop {
-    padding-top: 30px;
+    padding-top: 130px;
+    min-height: 97vh;
 
     .title {
       font-family: TitiliumWeb-Light;
@@ -31,7 +34,8 @@
     }
 
     .img-process {
-      height: 79%;
+      margin-top: 50px;
+      height: 1100px;
       border-radius: 30px;
     }
   }

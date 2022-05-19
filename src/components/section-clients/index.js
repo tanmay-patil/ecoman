@@ -107,14 +107,6 @@ function SectionClients() {
             );
           })}
         </div>
-
-        <MobileView>
-          <a href="#section-govtClients">
-            <div className="arrow-container">
-              <ArrowDownwardIcon />
-            </div>
-          </a>
-        </MobileView>
       </Section>
 
       <Section

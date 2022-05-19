@@ -5,6 +5,8 @@
   background: #0f150f;
 
   @include mobile {
+    min-height: 97vh;
+
     .title {
       font-family: TitiliumWeb-Light;
       font-size: 30px;
@@ -50,6 +52,8 @@
   }
 
   @include desktop {
+    min-height: 97vh;
+
     .title {
       font-family: TitiliumWeb-Light;
       font-size: 40px;
