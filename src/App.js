@@ -9,6 +9,7 @@ import SectionClients from "components/section-clients";
 import Loader from "components/loader";
 import SectionProcess from "components/section-process";
 import SectionProfile from "components/section-profile";
+import SectionContribution from "components/section-contribution";
 
 function App() {
   const [showLoader, setShowLoader] = useState(true);
@@ -31,6 +32,7 @@ function App() {
         <SectionVision />
         <SectionProcess />
         <SectionProfile />
+        <SectionContribution />
         <SectionClients />
       </div>
 

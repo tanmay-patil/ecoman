@@ -1,0 +1,61 @@
+@use "variables";
+@import "mixins";
+
+.section-contribution-main {
+  background: #ffffff;
+  font-family: TitiliumWeb-Light;
+
+  @include mobile {
+    padding-top: 50px;
+    padding-bottom: 80px;
+
+    .title {
+      font-size: 30px;
+      color: #449841;
+      text-align: center;
+      z-index: 1;
+    }
+  }
+
+  @include desktop {
+    min-height: 97vh;
+    padding-top: 50px;
+
+    .title {
+      font-size: 40px;
+      color: #449841;
+      text-align: center;
+      z-index: 1;
+    }
+
+    .img-leaf-circle {
+      height: 320px;
+    }
+
+    .inner-container {
+      width: 80%;
+      align-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+
+      .leaf-container {
+        position: relative;
+        margin: 15px;
+
+        p {
+          font-family: TitiliumWeb-SemiBold;
+          position: absolute;
+          font-size: 23px;
+          top: 117px;
+          left: 62px;
+          width: 200px;
+          text-align: center;
+          color: #667820;
+        }
+      }
+    }
+  }
+}

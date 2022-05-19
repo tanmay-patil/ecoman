@@ -23,7 +23,7 @@ function FooterBar() {
         ) : (
           <div className="text-container">
             <Fade top>
-              &copy; Copyright 2020. All Rights Reserved by Ecoman.
+              &copy; Copyright 2022. All Rights Reserved by Ecoman.
             </Fade>
           </div>
         )}
