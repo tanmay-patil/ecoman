@@ -19,12 +19,7 @@ function HeaderBar() {
     {
       id: "home",
       displayText: "Home",
-      href: "#section-headline",
-    },
-    {
-      id: "clients",
-      displayText: "Clients",
-      href: "#section-clients",
+      href: "#section-tagline",
     },
     {
       id: "vision",
@@ -32,9 +27,9 @@ function HeaderBar() {
       href: "#section-vision",
     },
     {
-      id: "tagline",
-      displayText: "Tagline",
-      href: "#section-tagline",
+      id: "clients",
+      displayText: "Clients",
+      href: "#section-clients",
     },
   ];
 

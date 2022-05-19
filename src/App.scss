@@ -33,18 +33,22 @@ body {
 }
 
 @include desktop {
+  html {
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
+    scroll-snap-type: y mandatory;
+  }
+
   .app-main {
     margin-top: 91px;
     margin-bottom: 40px;
   }
+
+  section {
+    scroll-snap-align: start;
+  }
 }
 
-html {
-  scroll-behavior: smooth;
-  scroll-snap-type: mandatory;
-  scroll-snap-type: y mandatory;
-}
 section {
-  scroll-snap-align: start;
   position: relative;
 }

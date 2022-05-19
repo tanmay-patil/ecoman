@@ -11,7 +11,7 @@ function Section({
   id,
 }) {
   const styles = {};
-  const className_ = className ? `${className} section-main` : "section-main";
+  const className_ = className ? `section-main ${className}` : "section-main";
 
   if (flex || center) {
     styles.display = "flex";
