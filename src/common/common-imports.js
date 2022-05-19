@@ -4,5 +4,6 @@ import leaves1 from "assets/images/leaves1.png";
 import leaves2 from "assets/images/leaves2.png";
 import leaves3 from "assets/images/leaves3.png";
 import loader from "assets/images/loader.gif";
+import process from "assets/images/process.png";
 
-export { logo, machine, leaves1, leaves2, leaves3, loader };
+export { logo, machine, leaves1, leaves2, leaves3, loader, process };

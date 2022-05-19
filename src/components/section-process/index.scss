@@ -1,0 +1,38 @@
+@use "variables";
+@import "mixins";
+
+.section-process-main {
+  background: #e5e8e7;
+
+  @include mobile {
+    .title {
+      font-family: TitiliumWeb-Light;
+      font-size: 30px;
+      color: #449841;
+      text-align: center;
+      z-index: 1;
+    }
+
+    .img-process {
+      height: 500px;
+      margin-top: 30px;
+    }
+  }
+
+  @include desktop {
+    padding-top: 30px;
+
+    .title {
+      font-family: TitiliumWeb-Light;
+      font-size: 40px;
+      color: #449841;
+      text-align: center;
+      z-index: 1;
+    }
+
+    .img-process {
+      height: 79%;
+      border-radius: 30px;
+    }
+  }
+}

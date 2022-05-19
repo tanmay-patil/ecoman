@@ -27,6 +27,11 @@ function HeaderBar() {
       href: "#section-vision",
     },
     {
+      id: "process",
+      displayText: "Process",
+      href: "#section-process",
+    },
+    {
       id: "clients",
       displayText: "Clients",
       href: "#section-clients",

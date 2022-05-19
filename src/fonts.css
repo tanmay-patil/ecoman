@@ -21,3 +21,13 @@
   src: local("TitiliumWeb"),
     url(./assets/fonts/Titillium/TitilliumWeb-Bold.ttf) format("opentype");
 }
+
+@font-face {
+  font-family: Legend;
+  src: local("Legend"), url(./assets/fonts/Test/legend.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: Campus;
+  src: local("Campus"), url(./assets/fonts/Test/campus.ttf) format("opentype");
+}

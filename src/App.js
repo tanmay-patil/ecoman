@@ -3,14 +3,13 @@ import "App.scss";
 import FooterBar from "components/footber-bar";
 import HeaderBar from "components/header-bar";
 import SectionTagline from "components/section-tagline";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import SectionVision from "components/section-vision";
 import SectionClients from "components/section-clients";
 import Loader from "components/loader";
+import SectionProcess from "components/section-process";
 
 function App() {
-  const taglineSectionRef = useRef(null);
-  const visionSectionRef = useRef(null);
   const [showLoader, setShowLoader] = useState(true);
 
   useEffect(() => {
@@ -27,10 +26,9 @@ function App() {
     <>
       <HeaderBar />
       <div className="app-main">
-        <div ref={taglineSectionRef} />
         <SectionTagline />
-        <div ref={visionSectionRef} />
         <SectionVision />
+        <SectionProcess />
         <SectionClients />
       </div>
 
