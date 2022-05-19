@@ -22,11 +22,13 @@ function SectionProfile() {
       <Fade right opposite>
         <div className="container">
           <p className="text-container">
-            {data.map((obj) => (
-              <p className="para">
-                <img className="img-leaf" src={leaf} alt="Leaf" />
-                {obj.text}
-              </p>
+            {data.map((obj, index) => (
+              <Fade right duration={500 + (index + 1) * 200}>
+                <p className="para">
+                  <img className="img-leaf" src={leaf} alt="Leaf" />
+                  {obj.text}
+                </p>
+              </Fade>
             ))}
           </p>
         </div>
