@@ -10,6 +10,9 @@
   }
 
   @include mobile {
+    padding-top: 50px;
+    padding-bottom: 80px;
+
     .title {
       font-size: 30px;
       color: #449841;
@@ -17,13 +20,13 @@
       z-index: 1;
     }
     .text-container {
-      margin-top: 80px;
+      margin-top: 30px;
       width: 80%;
       font-size: 20px;
     }
 
     .para {
-      margin-top: 30px;
+      margin-top: 50px;
       display: flex;
       justify-content: center;
       align-items: flex-start;
