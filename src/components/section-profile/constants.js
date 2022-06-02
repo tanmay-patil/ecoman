@@ -26,16 +26,6 @@ export const PARA_DATA_DESKTOP = [
     Organizations’.`,
   },
   {
-    text: `Ecoman have their office and manufacturing unit at Our head office
-    is located at Talawade, Pune. Ecoman has a state-of- art
-    biotechnology research and development centre that focuses on
-    developing effective microorganisms for efficient and faster
-    composting of various types of organic materials. We are proud to be
-    at the forefront of developing new technology for waste management.
-    Continuous and quality driven innovation is what sets Ecoman apart
-    from the rest.`,
-  },
-  {
     text: `Ecoman’s Composting Machine ‘FOODIE’ is a unique “MADE FOR INDIA”
     and “MADE IN INDIA” solution to solve garbage problems effectively.`,
   },
@@ -67,16 +57,6 @@ export const PARA_DATA_MOBILE = [
     Drugs Administration and Parliamentary Affairs. , GoM (Shri. Girish
     Bapat), Hon. Chief Secretary, MoUD, GoI and many Government
     Organizations’.`,
-  },
-  {
-    text: `Ecoman have their office and manufacturing unit at Our head office
-    is located at Talawade, Pune. Ecoman has a state-of- art
-    biotechnology research and development centre that focuses on
-    developing effective microorganisms for efficient and faster
-    composting of various types of organic materials. We are proud to be
-    at the forefront of developing new technology for waste management.
-    Continuous and quality driven innovation is what sets Ecoman apart
-    from the rest.`,
   },
   {
     text: `Ecoman’s Composting Machine ‘FOODIE’ is a unique “MADE FOR INDIA”

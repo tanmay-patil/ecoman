@@ -23,18 +23,18 @@ function HeaderBar() {
     },
     {
       id: "vision",
-      displayText: "Vision",
+      displayText: "About Us",
       href: "#section-vision",
     },
     {
-      id: "process",
-      displayText: "Process",
-      href: "#section-process",
+      id: "products",
+      displayText: "Products",
+      href: "#section-products",
     },
     {
-      id: "clients",
-      displayText: "Clients",
-      href: "#section-clients",
+      id: "technology",
+      displayText: "Technology",
+      href: "#section-technology",
     },
   ];
 
