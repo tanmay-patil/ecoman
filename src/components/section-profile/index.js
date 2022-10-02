@@ -17,7 +17,7 @@ function SectionProfile() {
       center
     >
       <Fade right opposite>
-        <p className="title">PROFILE</p>
+        <p className="title">ABOUT US</p>
       </Fade>
       <div className="container">
         <p className="text-container">
