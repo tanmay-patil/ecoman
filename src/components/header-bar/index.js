@@ -17,14 +17,9 @@ function HeaderBar() {
 
   const menuItems = [
     {
-      id: "home",
-      displayText: "Home",
-      href: "#section-tagline",
-    },
-    {
       id: "vision",
       displayText: "About Us",
-      href: "#section-vision",
+      href: "#section-profile",
     },
     {
       id: "products",
@@ -36,14 +31,28 @@ function HeaderBar() {
       displayText: "Technology",
       href: "#section-technology",
     },
+    {
+      id: "contact",
+      displayText: "Contact",
+      href: "#section-contact",
+    },
   ];
+
+  function topFunction() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 
   return (
     <Fade top>
       <div className="header-bar-main">
         <div className="left-container">
           <Fade left>
-            <img src={logo} className="img-logo" alt="logo" />
+            <img
+              onClick={topFunction}
+              src={logo}
+              className="img-logo"
+              alt="logo"
+            />
           </Fade>
         </div>
         <div className="right-container">

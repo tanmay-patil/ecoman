@@ -13,11 +13,14 @@ function SectionVideo() {
       center
     >
       <Fade right opposite>
-        <p className="title">ACTUAL WORKING</p>
+        {/* <p className="title">ACTUAL WORKING</p> */}
       </Fade>
-      <video width="950" height="600" controls autoPlay>
+      <video width="950" height="600" controls>
         <source src={actual_video} type="video/mp4" />
       </video>
+      <Fade top>
+        <button className="view-btn">VIEW OUR TECHNOLOGY</button>
+      </Fade>
     </Section>
   );
 }

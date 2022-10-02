@@ -3,6 +3,7 @@ import { machine, leaves2, leaves3 } from "common/common-imports";
 import Section from "components/section";
 import { Fade } from "react-reveal";
 import { isMobile } from "react-device-detect";
+import { leaf } from "common/common-imports";
 
 function SectionTagline() {
   return (
@@ -19,6 +20,23 @@ function SectionTagline() {
         <Fade left>
           <img src={machine} className="img-machine" alt="Machine" />
         </Fade>
+        <div className="highlights-container">
+          <p className="highlights-title">HIGHLIGHTS</p>
+          <div className="highlights-subtitle-container">
+            <p>
+              <img className="img-leaf" src={leaf} alt="Leaf" />
+              1150+ Installations
+            </p>
+            <p>
+              <img className="img-leaf" src={leaf} alt="Leaf" />
+              20+ Countries
+            </p>
+            <p>
+              <img className="img-leaf" src={leaf} alt="Leaf" />
+              Pioneers since 2009
+            </p>
+          </div>
+        </div>
       </div>
       <div className="right-section">
         <p className="title1">INDIA KA</p>

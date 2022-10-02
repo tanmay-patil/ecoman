@@ -6,19 +6,34 @@ import { Fade } from "react-reveal";
 function SectionCommercial() {
   const data = [
     {
-      text1: "24",
-      text2: "HOURS",
-      text3: "Food waste to compost",
-    },
-    {
-      text1: "24",
-      text2: "HOURS",
-      text3: "Reduction rate",
-    },
-    {
       text1: "100%",
       text2: "FULLY",
       text3: "Automatic",
+    },
+    {
+      text1: "24",
+      text2: "HOURS",
+      text3: "Compost in 24 hours",
+    },
+    {
+      text1: "90%",
+      text2: "REDUCTION",
+      text3: "Volume reduction",
+    },
+    {
+      text1: "",
+      text2: "NOISELESS",
+      text3: "",
+    },
+    {
+      text1: "",
+      text2: "ODORLESS",
+      text3: "",
+    },
+    {
+      text1: "",
+      text2: "MAINTENANCE FREE",
+      text3: "",
     },
   ];
 
@@ -28,20 +43,15 @@ function SectionCommercial() {
         <div className="inner-content">
           <div className="left-section">
             <Fade left>
-              <p className="title">COMMERCIAL</p>
+              <p className="title">
+                World’s best Commercial Composting Machine
+              </p>
             </Fade>
             <Fade top>
               <p className="text">
-                We produce a range of composting solutions for on-site waste
-                reduction in commercial applications. They offer many advantages
-                over other traditional waste management:
+                We produce world’s best Commercial Composting Machines for
+                onsite waste management
               </p>
-              <ul>
-                <li>Turns food waste to compost in just 24 hours</li>
-                <li>Reduce garbage volume and disposal costs</li>
-                <li>Odourless and pest deterrent</li>
-                <li>Sustainable and socially responsible</li>
-              </ul>
             </Fade>
             <Fade top>
               <button className="view-btn">VIEW OUR PRODUCTS</button>

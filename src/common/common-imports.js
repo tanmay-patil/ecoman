@@ -13,9 +13,10 @@ import technical_video from "assets/videos/technical-video.mp4";
 
 import government from "assets/svg/government.svg";
 import home from "assets/svg/home.svg";
-import hospital from "assets/svg/hospital.svg";
+import hospital from "assets/svg/hospital.png";
 import industry from "assets/svg/industry.svg";
 import institution from "assets/svg/institution.svg";
+import builder from "assets/svg/builder.png";
 import psu from "assets/svg/psu.svg";
 import restaurant from "assets/svg/restaurant.svg";
 
@@ -39,4 +40,5 @@ export {
   institution,
   psu,
   restaurant,
+  builder,
 };

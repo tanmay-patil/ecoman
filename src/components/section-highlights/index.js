@@ -8,13 +8,13 @@ function SectionHighlights() {
 
   const data = [
     {
-      text: "1100+ Installations",
+      text: "1150+ Installations",
     },
     {
       text: "20+ Countries",
     },
     {
-      text: "Pioneers since 2011",
+      text: "Pioneers since 2009",
     },
   ];
 

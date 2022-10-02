@@ -2,25 +2,24 @@ import "./index.scss";
 import Section from "components/section";
 import {
   government,
-  home,
+  builder,
   hospital,
   industry,
   institution,
-  psu,
   restaurant,
 } from "common/common-imports";
+import { leaf } from "common/common-imports";
 import { Fade } from "react-reveal";
-import { isMobile } from "react-device-detect";
 
 function SectionApplications() {
   const data = [
     {
-      text: "Hotels",
-      icon: restaurant,
+      text: "Builders",
+      icon: builder,
     },
     {
-      text: "Housing Society",
-      icon: home,
+      text: "Hotels",
+      icon: restaurant,
     },
     {
       text: "Government",
@@ -37,10 +36,6 @@ function SectionApplications() {
     {
       text: "Institutions",
       icon: institution,
-    },
-    {
-      text: "PSUs",
-      icon: psu,
     },
   ];
 
@@ -64,6 +59,16 @@ function SectionApplications() {
               </div>
             </Fade>
           ))}
+      </div>
+
+      <div className="highlights-container">
+        <p className="highlights-title">HIGHLIGHTS</p>
+        <div className="highlights-subtitle-container">
+          <p>
+            <img className="img-leaf" src={leaf} alt="Leaf" />
+            Total Waste solutions at your doorstep
+          </p>
+        </div>
       </div>
     </Section>
   );

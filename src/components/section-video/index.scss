@@ -43,5 +43,22 @@
       height: 1100px;
       border-radius: 30px;
     }
+
+    .view-btn {
+      padding: 15px;
+      font-size: 15px;
+      background: inherit;
+      border: 1pt solid #428d3f;
+      color: #428d3f;
+      transition: 0.4s;
+      cursor: pointer;
+      margin-top: 30px;
+
+      &:hover {
+        border: 2pt solid black;
+        color: black;
+        transition: 0.4s;
+      }
+    }
   }
 }

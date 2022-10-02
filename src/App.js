@@ -4,10 +4,8 @@ import FooterBar from "components/footber-bar";
 import HeaderBar from "components/header-bar";
 import SectionTagline from "components/section-tagline";
 import { useEffect, useState } from "react";
-import SectionVision from "components/section-vision";
 import SectionClients from "components/section-clients";
 import Loader from "components/loader";
-import SectionHighlights from "components/section-highlights";
 import SectionProfile from "components/section-profile";
 import SectionContribution from "components/section-contribution";
 import SectionVideo from "components/section-video";
@@ -33,13 +31,13 @@ function App() {
       <div className="app-main">
         {/* Home sections */}
         <SectionTagline />
-        <SectionHighlights />
-        <SectionVideo />
+        {/* <SectionHighlights /> */}
         <SectionCommercial />
+        <SectionVideo />
         <SectionApplications />
 
         {/* About Us sections */}
-        <SectionVision />
+        {/* <SectionVision /> */}
         <SectionProfile />
         <SectionContribution />
         <SectionClients />

@@ -16,15 +16,15 @@ export const PARA_DATA_DESKTOP = [
     installations across India. Also, exported our machines to more than
     15 countries.`,
   },
-  {
-    text: `Ecoman’s FOODIE machines Organic Waste Composting Machines have been
-    very well appreciated by Hon. Minister Urban Development, GoI (Shri.
-    Venkaiah Naidu), Hon. Minister MOEF, GoI (Shri.Prakash Javdekar),
-    Hon. Minister Food, Civil Supplies and Consumer Protection, Food and
-    Drugs Administration and Parliamentary Affairs. , GoM (Shri. Girish
-    Bapat), Hon. Chief Secretary, MoUD, GoI and many Government
-    Organizations’.`,
-  },
+  // {
+  //   text: `Ecoman’s FOODIE machines Organic Waste Composting Machines have been
+  //   very well appreciated by Hon. Minister Urban Development, GoI (Shri.
+  //   Venkaiah Naidu), Hon. Minister MOEF, GoI (Shri.Prakash Javdekar),
+  //   Hon. Minister Food, Civil Supplies and Consumer Protection, Food and
+  //   Drugs Administration and Parliamentary Affairs. , GoM (Shri. Girish
+  //   Bapat), Hon. Chief Secretary, MoUD, GoI and many Government
+  //   Organizations’.`,
+  // },
   {
     text: `Ecoman’s Composting Machine ‘FOODIE’ is a unique “MADE FOR INDIA”
     and “MADE IN INDIA” solution to solve garbage problems effectively.`,
@@ -49,15 +49,15 @@ export const PARA_DATA_MOBILE = [
     installations across India. Also, exported our machines to more than
     15 countries.`,
   },
-  {
-    text: `Ecoman’s FOODIE machines Organic Waste Composting Machines have been
-    very well appreciated by Hon. Minister Urban Development, GoI (Shri.
-    Venkaiah Naidu), Hon. Minister MOEF, GoI (Shri.Prakash Javdekar),
-    Hon. Minister Food, Civil Supplies and Consumer Protection, Food and
-    Drugs Administration and Parliamentary Affairs. , GoM (Shri. Girish
-    Bapat), Hon. Chief Secretary, MoUD, GoI and many Government
-    Organizations’.`,
-  },
+  // {
+  //   text: `Ecoman’s FOODIE machines Organic Waste Composting Machines have been
+  //   very well appreciated by Hon. Minister Urban Development, GoI (Shri.
+  //   Venkaiah Naidu), Hon. Minister MOEF, GoI (Shri.Prakash Javdekar),
+  //   Hon. Minister Food, Civil Supplies and Consumer Protection, Food and
+  //   Drugs Administration and Parliamentary Affairs. , GoM (Shri. Girish
+  //   Bapat), Hon. Chief Secretary, MoUD, GoI and many Government
+  //   Organizations’.`,
+  // },
   {
     text: `Ecoman’s Composting Machine ‘FOODIE’ is a unique “MADE FOR INDIA”
     and “MADE IN INDIA” solution to solve garbage problems effectively.`,

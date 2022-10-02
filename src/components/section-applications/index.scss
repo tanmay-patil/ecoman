@@ -48,6 +48,38 @@
   @include desktop {
     min-height: 97vh;
 
+    .img-leaf {
+      height: 30px;
+      width: 30px;
+    }
+
+    .highlights-container {
+      margin-top: 100px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .highlights-title {
+      font-size: 30px;
+      color: green;
+      font-weight: bold;
+    }
+
+    .highlights-subtitle-container {
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+        font-size: 20px;
+      }
+    }
+
     .title {
       font-family: TitiliumWeb-Light;
       font-size: 40px;
