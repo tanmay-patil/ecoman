@@ -1,0 +1,62 @@
+@use "variables";
+@import "mixins";
+
+.section-products-main {
+  background: #eae9e5;
+
+  @include mobile {
+  }
+
+  @include desktop {
+    min-height: 97vh;
+    padding-top: 50px;
+
+    .title {
+      font-size: 40px;
+      color: #449841;
+      text-align: center;
+      z-index: 1;
+      margin-bottom: 50px;
+    }
+
+    .product-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 100px;
+
+      .left-section {
+        .img-product {
+          height: 300px;
+          margin-right: 200px;
+        }
+      }
+      .right-section {
+        .product-name {
+          font-size: 50px;
+          font-weight: 200;
+          margin-right: 20px;
+          color: #5da727;
+        }
+        .product-capacity {
+          font-size: 20px;
+          font-weight: 200;
+          margin-right: 20px;
+          color: #406327;
+        }
+        .product-dimensions {
+          font-size: 20px;
+          font-weight: 200;
+          margin-right: 20px;
+          color: #406327;
+        }
+        .product-powerRating {
+          font-size: 20px;
+          font-weight: 200;
+          margin-right: 20px;
+          color: #406327;
+        }
+      }
+    }
+  }
+}

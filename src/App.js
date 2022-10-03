@@ -10,6 +10,8 @@ import SectionProfile from "components/section-profile";
 import SectionVideo from "components/section-video";
 import SectionCommercial from "components/section-commercial";
 import SectionApplications from "components/section-applications";
+import SectionProducts from "components/section-products";
+import SectionTechnology from "components/section-technology";
 
 function App() {
   const [showLoader, setShowLoader] = useState(true);
@@ -34,6 +36,8 @@ function App() {
         <SectionApplications />
         <SectionClients />
         <SectionProfile />
+        <SectionProducts />
+        <SectionTechnology />
       </div>
 
       <FooterBar />

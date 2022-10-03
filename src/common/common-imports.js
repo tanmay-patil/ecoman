@@ -20,6 +20,9 @@ import builder from "assets/svg/builder.png";
 import psu from "assets/svg/psu.svg";
 import restaurant from "assets/svg/restaurant.svg";
 
+import product1 from "assets/images/products/product-1.png";
+import product2 from "assets/images/products/product-2.png";
+
 export {
   logo,
   machine,
@@ -41,4 +44,6 @@ export {
   psu,
   restaurant,
   builder,
+  product1,
+  product2,
 };
