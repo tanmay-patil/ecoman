@@ -23,7 +23,7 @@ import {
   client19,
   client20,
 } from "common/industrial-clients";
-import { isMobile, MobileView } from "react-device-detect";
+import { isMobile } from "react-device-detect";
 import {
   govt_client1,
   govt_client2,
@@ -39,7 +39,47 @@ import {
   govt_client12,
   govt_client13,
 } from "common/govt-clients";
-import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import {
+  builder_client1,
+  builder_client2,
+  builder_client3,
+  builder_client4,
+  builder_client5,
+  builder_client6,
+  builder_client7,
+  builder_client8,
+  builder_client9,
+  builder_client10,
+  builder_client11,
+  builder_client12,
+  builder_client13,
+  builder_client14,
+  builder_client15,
+  builder_client16,
+  builder_client17,
+  builder_client18,
+} from "common/builder-clients";
+import {
+  hotels_client1,
+  hotels_client2,
+  hotels_client3,
+  hotels_client4,
+  hotels_client5,
+  hotels_client6,
+  hotels_client7,
+  hotels_client8,
+  hotels_client9,
+  hotels_client10,
+  hotels_client11,
+  hotels_client12,
+  hotels_client13,
+  hotels_client14,
+  hotels_client15,
+  hotels_client16,
+  hotels_client17,
+  hotels_client18,
+  hotels_client19,
+} from "common/hotel-clients";
 
 function SectionClients() {
   const industrialClients = [
@@ -81,6 +121,49 @@ function SectionClients() {
     govt_client13,
   ];
 
+  const builderClients = [
+    builder_client1,
+    builder_client2,
+    builder_client3,
+    builder_client4,
+    builder_client5,
+    builder_client6,
+    builder_client7,
+    builder_client8,
+    builder_client9,
+    builder_client10,
+    builder_client11,
+    builder_client12,
+    builder_client13,
+    builder_client14,
+    builder_client15,
+    builder_client16,
+    builder_client17,
+    builder_client18,
+  ];
+
+  const hotelsClients = [
+    hotels_client1,
+    hotels_client2,
+    hotels_client3,
+    hotels_client4,
+    hotels_client5,
+    hotels_client6,
+    hotels_client7,
+    hotels_client8,
+    hotels_client9,
+    hotels_client10,
+    hotels_client11,
+    hotels_client12,
+    hotels_client13,
+    hotels_client14,
+    hotels_client15,
+    hotels_client16,
+    hotels_client17,
+    hotels_client18,
+    hotels_client19,
+  ];
+
   return (
     <>
       <Section
@@ -95,6 +178,58 @@ function SectionClients() {
           {industrialClients.map((client, index) => {
             return (
               <Fade left duration={500 + (index + 1) * 100}>
+                <div className="img-container">
+                  <img
+                    key={index}
+                    className="img-client"
+                    src={client}
+                    alt="Client"
+                  />
+                </div>
+              </Fade>
+            );
+          })}
+        </div>
+      </Section>
+
+      <Section
+        id="section-builderClients"
+        className="section-clients-main"
+        center={!isMobile}
+      >
+        <Fade left>
+          <p className="title">BUILDER CLIENTELE</p>
+        </Fade>
+        <div className="clients-container">
+          {builderClients.map((client, index) => {
+            return (
+              <Fade right duration={500 + (index + 1) * 100}>
+                <div className="img-container">
+                  <img
+                    key={index}
+                    className="img-client"
+                    src={client}
+                    alt="Client"
+                  />
+                </div>
+              </Fade>
+            );
+          })}
+        </div>
+      </Section>
+
+      <Section
+        id="section-hotelClients"
+        className="section-clients-main"
+        center={!isMobile}
+      >
+        <Fade left>
+          <p className="title">HOTEL CLIENTELE</p>
+        </Fade>
+        <div className="clients-container">
+          {hotelsClients.map((client, index) => {
+            return (
+              <Fade right duration={500 + (index + 1) * 100}>
                 <div className="img-container">
                   <img
                     key={index}

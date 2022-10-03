@@ -12,6 +12,7 @@ import SectionCommercial from "components/section-commercial";
 import SectionApplications from "components/section-applications";
 import SectionProducts from "components/section-products";
 import SectionTechnology from "components/section-technology";
+import SectionContact from "components/section-contact";
 
 function App() {
   const [showLoader, setShowLoader] = useState(true);
@@ -38,6 +39,7 @@ function App() {
         <SectionProfile />
         <SectionProducts />
         <SectionTechnology />
+        <SectionContact />
       </div>
 
       <FooterBar />

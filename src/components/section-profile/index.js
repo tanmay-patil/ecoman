@@ -31,6 +31,36 @@ function SectionProfile() {
           ))}
         </p>
       </div>
+
+      <div className="highlights-container">
+        <p className="highlights-title">CLIENT LINKS</p>
+        <div className="highlights-subtitle-container">
+          <p>
+            <a href="#section-clients">
+              <img className="img-leaf" src={leaf} alt="Leaf" />
+              Industries
+            </a>
+          </p>
+          <p>
+            <a href="#section-builderClients">
+              <img className="img-leaf" src={leaf} alt="Leaf" />
+              Builders
+            </a>
+          </p>
+          <p>
+            <a href="#section-hotelClients">
+              <img className="img-leaf" src={leaf} alt="Leaf" />
+              Hotels
+            </a>
+          </p>
+          <p>
+            <a href="#section-govtClients">
+              <img className="img-leaf" src={leaf} alt="Leaf" />
+              Government
+            </a>
+          </p>
+        </div>
+      </div>
     </Section>
   );
 }
