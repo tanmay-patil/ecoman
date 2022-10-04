@@ -54,7 +54,7 @@ function SectionCommercial() {
               </p>
             </Fade>
             <Fade top>
-              <a href="#section-product">
+              <a href="#section-products">
                 <button className="view-btn">VIEW OUR PRODUCTS</button>
               </a>
             </Fade>
