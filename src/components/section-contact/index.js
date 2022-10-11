@@ -11,10 +11,8 @@ function SectionContact() {
 
       <div className="container">
         <div className="sub-container">
-          <div className="title">HEAD OFFICE</div>
-          <p>Ecoman Enviro Solutions Pvt. Ltd.</p>
-          <p>Gat No. 189, Bhalekar Chowk, Jyotiba Nagar,</p>
-          <p>Talawade, Pune - 412114</p>
+          <div className="title">INQUIRIES</div>
+          <p>inquiries@ecoman.in</p>
         </div>
         <div className="sub-container">
           <div className="title">CONTACT</div>
