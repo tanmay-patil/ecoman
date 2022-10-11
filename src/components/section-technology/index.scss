@@ -1,7 +1,7 @@
 @use "variables";
 @import "mixins";
 
-.section-video-main {
+.section-technology-main {
   background: #e5e8e7;
 
   @include mobile {
@@ -29,6 +29,7 @@
 
   @include desktop {
     min-height: 97vh;
+    padding-top: 100px;
 
     .img-leaf {
       height: 30px;
@@ -86,6 +87,7 @@
       transition: 0.4s;
       cursor: pointer;
       margin-top: 30px;
+      margin-bottom: 50px;
 
       &:hover {
         border: 2pt solid black;

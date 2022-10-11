@@ -19,7 +19,9 @@ function SectionVideo() {
         <source src={actual_video} type="video/mp4" />
       </video>
       <Fade top>
-        <button className="view-btn">VIEW OUR TECHNOLOGY</button>
+        <a href="#section-technology">
+          <button className="view-btn">VIEW OUR TECHNOLOGY</button>
+        </a>
       </Fade>
     </Section>
   );

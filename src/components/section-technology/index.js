@@ -2,12 +2,33 @@ import "./index.scss";
 import Section from "components/section";
 import { Fade } from "react-reveal";
 import { technical_video } from "common/common-imports";
-import { leaf } from "common/common-imports";
+import HighlightSection from "components/highlights-section";
 
 function SectionTechnology() {
-  const sectionName = "video";
+  const sectionName = "technology";
 
-  const handleOnClick = () => {};
+  const data = [
+    {
+      text1: "",
+      text2: "Perfect blend of Biotechnology & Engineering",
+      text3: "",
+    },
+    {
+      text1: "",
+      text2: "Stable and pathogenic free Compost",
+      text3: "",
+    },
+    {
+      text1: "",
+      text2: "Consortium of Proprietary Bacteria",
+      text3: "",
+    },
+    {
+      text1: "",
+      text2: "Sensors monitoring smallest details",
+      text3: "",
+    },
+  ];
 
   return (
     <Section
@@ -15,37 +36,20 @@ function SectionTechnology() {
       className={`section-${sectionName}-main`}
       center
     >
+      <Fade left>
+        <p className="title">Technology</p>
+      </Fade>
+
       <video width="950" height="600" controls>
         <source src={technical_video} type="video/mp4" />
       </video>
       <Fade top>
         <a href={"#section-video"}>
-          <button onClick={handleOnClick} className="view-btn">
-            Go to Actual Video
-          </button>
+          <button className="view-btn">Actual Working video</button>
         </a>
       </Fade>
-      <div className="highlights-container">
-        <p className="highlights-title">HIGHLIGHTS</p>
-        <div className="highlights-subtitle-container">
-          <p>
-            <img className="img-leaf" src={leaf} alt="Leaf" />
-            Perfect blend of Biotechnology &amp; Engineering
-          </p>
-          <p>
-            <img className="img-leaf" src={leaf} alt="Leaf" />
-            Stable and pathogenic free Compost
-          </p>
-          <p>
-            <img className="img-leaf" src={leaf} alt="Leaf" />
-            Consortium of Proprietary Bacteria
-          </p>
-          <p>
-            <img className="img-leaf" src={leaf} alt="Leaf" />
-            Sensors monitoring smallest details
-          </p>
-        </div>
-      </div>
+
+      <HighlightSection data={data} />
     </Section>
   );
 }

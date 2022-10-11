@@ -80,7 +80,7 @@ function SectionProducts() {
                     Processing Capacity : {obj.processingCapacity}
                   </p>
                   <p className="product-dimensions">
-                    Dimensions: {obj.dimensions}
+                    Dimensions (ft): {obj.dimensions}
                   </p>
                   <p className="product-powerRating">
                     Power rating: {obj.powerRating}

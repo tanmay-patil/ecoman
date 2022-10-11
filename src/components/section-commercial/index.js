@@ -2,24 +2,27 @@ import "./index.scss";
 import Section from "components/section";
 import { machine2 } from "common/common-imports";
 import { Fade } from "react-reveal";
+import HighlightSection from "components/highlights-section";
 
 function SectionCommercial() {
-  const data = [
+  const dataRow1 = [
     {
       text1: "100%",
-      text2: "FULLY",
-      text3: "Automatic",
+      text2: "FULLY Automatic",
+      text3: "",
     },
     {
       text1: "24",
-      text2: "HOURS",
-      text3: "Compost in 24 hours",
+      text2: "HOURS Composting",
+      text3: "",
     },
     {
       text1: "90%",
-      text2: "REDUCTION",
-      text3: "Volume reduction",
+      text2: "Volume reduction",
+      text3: "",
     },
+  ];
+  const dataRow2 = [
     {
       text1: "",
       text2: "NOISELESS",
@@ -65,21 +68,8 @@ function SectionCommercial() {
             </Fade>
           </div>
         </div>
-        <div className="bottom-content">
-          <div className="inner-container">
-            {data &&
-              data.map((obj) => (
-                <Fade left cascade>
-                  <div className="details-block">
-                    <div className="details-left">{obj.text1}</div>
-                    <div className="details-right">
-                      <p className="details-title">{obj.text2}</p>
-                      <p className="details-subtitle">{obj.text3}</p>
-                    </div>
-                  </div>
-                </Fade>
-              ))}
-          </div>
+        <div style={{ marginTop: "-166px", width: "100%" }}>
+          <HighlightSection data={dataRow1} dataRow2={dataRow2} />
         </div>
       </div>
     </Section>
