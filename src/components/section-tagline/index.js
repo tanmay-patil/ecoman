@@ -1,61 +1,57 @@
 import "./index.scss";
-import { machine, leaves2, leaves3 } from "common/common-imports";
+import {
+  machine,
+  country,
+  flag,
+  installation,
+  background,
+} from "common/common-imports";
 import Section from "components/section";
 import { Fade } from "react-reveal";
-import { isMobile } from "react-device-detect";
-import { leaf } from "common/common-imports";
-import HighlightSection from "components/highlights-section";
+import SectionHighlightsV2 from "components/highlights-section-v2";
 
 function SectionTagline() {
-  const data = [
-    {
-      text1: "1150+",
-      text2: "Installations",
-      text3: "",
-    },
-    {
-      text1: "20+",
-      text2: "Countries",
-      text3: "",
-    },
-    {
-      text1: "2009",
-      text2: "Pioneers since",
-      text3: "",
-    },
-  ];
+  const data = {
+    row1: [
+      {
+        icon: installation,
+        label: "1150+ Installations",
+      },
+      {
+        icon: country,
+        label: "20+ Countries",
+      },
+      {
+        icon: flag,
+        label: "Pioneers since 2009",
+      },
+    ],
+  };
 
   return (
-    <Section id={"section-tagline"} className="section-tagline-main">
-      <div className="parent-container">
-        <div className="plain-background"></div>
-        <Fade top>
-          <img
-            src={isMobile ? leaves3 : leaves2}
-            className="img-leaves1"
-            alt="Leaves"
-          />
-        </Fade>
-        <div className="left-section">
+    <div
+      style={{
+        backgroundImage: `url(${background})`,
+        backgroundRepeat: "round",
+      }}
+    >
+      <Section id={"section-tagline"} className="section-tagline-main">
+        <div className="top-container">
           <Fade left>
             <img src={machine} className="img-machine" alt="Machine" />
           </Fade>
+          <Fade left>
+            <div className="right-section">
+              <p className="title1">INDIA KA</p>
+              <p className="title2">WASTE MANAGER</p>
+            </div>
+          </Fade>
         </div>
-        <div className="right-section">
-          <p className="title1">INDIA KA</p>
-          <p className="title2">WASTE MANAGER</p>
+        <div className="bottom-container">
+          <SectionHighlightsV2 data={data} />
         </div>
-      </div>
-
-      <div
-        style={{
-          width: "100%",
-          marginTop: "-100px",
-        }}
-      >
-        <HighlightSection data={data} />
-      </div>
-    </Section>
+      </Section>
+    </div>
   );
 }
 

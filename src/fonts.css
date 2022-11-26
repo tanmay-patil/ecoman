@@ -31,3 +31,9 @@
   font-family: Campus;
   src: local("Campus"), url(./assets/fonts/Test/campus.ttf) format("opentype");
 }
+
+@font-face {
+  font-family: Avenir-Regular;
+  src: local("Avenir"),
+    url(./assets/fonts/Avenir/Avenir-Regular.otf) format("opentype");
+}

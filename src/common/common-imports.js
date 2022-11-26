@@ -23,6 +23,12 @@ import restaurant from "assets/svg/restaurant.svg";
 import product1 from "assets/images/products/product-1.png";
 import product2 from "assets/images/products/product-2.png";
 
+// highlight icons
+import installation from "assets/highlights/installation.png";
+import country from "assets/highlights/country.png";
+import flag from "assets/highlights/flag.png";
+import background from "assets/highlights/background.jpeg";
+
 export {
   logo,
   machine,
@@ -46,4 +52,8 @@ export {
   builder,
   product1,
   product2,
+  installation,
+  country,
+  flag,
+  background,
 };

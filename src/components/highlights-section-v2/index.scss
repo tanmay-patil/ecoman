@@ -1,0 +1,28 @@
+@use "variables";
+@import "mixins";
+
+.section-highlights-main {
+  display: flex;
+  background-color: inherit;
+  color: white;
+
+  svg {
+    fill: white;
+  }
+
+  .highlight-element {
+    border-radius: 10px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px;
+    padding: 8px;
+    font-size: 14px;
+
+    .img-icon {
+      height: 30px;
+    }
+  }
+}
