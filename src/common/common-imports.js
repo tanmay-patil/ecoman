@@ -29,6 +29,8 @@ import country from "assets/highlights/country.png";
 import flag from "assets/highlights/flag.png";
 import background from "assets/highlights/background.jpeg";
 import background2 from "assets/highlights/background2.jpeg";
+import background3 from "assets/highlights/background3.jpeg";
+import background4 from "assets/highlights/background4.jpeg";
 import reduce from "assets/highlights/reduce.png";
 import noiseless from "assets/highlights/noiseless.png";
 import odorless from "assets/highlights/odorless.png";
@@ -61,6 +63,8 @@ export {
   flag,
   background,
   background2,
+  background3,
+  background4,
   reduce,
   noiseless,
   odorless,

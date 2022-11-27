@@ -21,6 +21,9 @@
     .right-section {
       padding-left: 100px;
       z-index: 1;
+      background: #00000042;
+      padding: 20px;
+      border-radius: 20px;
 
       .title1 {
         font-family: Avenir-Regular;
@@ -39,14 +42,16 @@
     }
 
     .view-btn {
+      border-radius: 5px;
       padding: 15px;
       font-size: 15px;
-      background: rgb(255 255 255 / 44%);
-      border: 1pt solid #428d3f;
-      color: #1e6500;
+      background: rgb(255 255 255 / 0%);
+      border: 1px solid white;
+      color: white;
       transition: 0.4s;
       cursor: pointer;
       margin-top: 30px;
+      float: right;
 
       &:hover {
         border: 2pt solid black;

@@ -2,94 +2,55 @@
 @import "mixins";
 
 .section-applications-main {
-  background: #eae9e5;
+  height: 83vh;
+  background: inherit !important;
 
-  @include mobile {
-    min-height: 97vh;
-    padding-top: 50px;
+  .top-container {
+    height: 80%;
+    justify-content: center;
 
-    .title {
-      font-family: TitiliumWeb-Light;
-      font-size: 30px;
-      color: #449841;
-      text-align: center;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    .img-machine {
+      margin-top: 100px;
+      height: 300px;
+    }
+
+    .right-section {
+      padding-left: 100px;
       z-index: 1;
-    }
 
-    img {
-      height: 70px;
-    }
+      .title1 {
+        font-family: Avenir-Regular;
+        font-weight: bold;
+        font-size: 20px;
+        color: #a78641;
+        text-align: center;
+      }
 
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 30px;
-      flex-direction: column;
-      padding-bottom: 100px;
-    }
-
-    .img-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-top: 40px;
-
-      p {
-        font-family: TitiliumWeb-SemiBold;
-        font-size: 16px;
+      .title2 {
+        font-family: Avenir-Regular;
+        font-weight: bold;
+        font-size: 20px;
+        color: white;
         margin-top: 20px;
-        color: #262626;
+      }
+
+      .para {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 20px;
       }
     }
-  }
-
-  @include desktop {
-    min-height: 97vh;
 
     .img-leaf {
       height: 30px;
       width: 30px;
-    }
-
-    .highlights-container {
-      margin-top: 100px;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .highlights-title {
-      font-size: 30px;
-      color: green;
-      font-weight: bold;
-    }
-
-    .highlights-subtitle-container {
-      display: flex;
-      justify-content: space-between;
-
-      p {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 20px;
-        font-size: 20px;
-      }
-    }
-
-    .title {
-      font-family: TitiliumWeb-Light;
-      font-size: 40px;
-      color: #449841;
-      text-align: center;
-      z-index: 1;
-    }
-
-    img {
-      height: 70px;
     }
 
     .container {
@@ -113,5 +74,17 @@
         color: #262626;
       }
     }
+
+    img {
+      height: 70px;
+    }
+  }
+
+  .bottom-container {
+    background-color: #1d1d1d41;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

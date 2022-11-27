@@ -1,6 +1,7 @@
 import "./index.scss";
-import Section from "components/section";
 import {
+  installation,
+  background3,
   government,
   builder,
   hospital,
@@ -8,11 +9,22 @@ import {
   institution,
   restaurant,
 } from "common/common-imports";
-import { leaf } from "common/common-imports";
+import Section from "components/section";
 import { Fade } from "react-reveal";
+import SectionHighlightsV2 from "components/highlights-section-v2";
+import { PARA_DATA_DESKTOP } from "./constants";
 
-function SectionApplications() {
-  const data = [
+function Applications() {
+  const data = {
+    row1: [
+      {
+        icon: installation,
+        label: "Total Waste solutions at your doorstep",
+      },
+    ],
+  };
+
+  const applicationData = [
     {
       text: "Builders",
       icon: builder,
@@ -40,38 +52,41 @@ function SectionApplications() {
   ];
 
   return (
-    <Section
-      id={"section-applications"}
-      className="section-applications-main"
-      center
+    <div
+      style={{
+        backgroundImage: `url(${background3})`,
+        backgroundRepeat: "round",
+        backgroundSize: "cover",
+      }}
     >
-      <Fade left>
-        <p className="title">Applications</p>
-      </Fade>
-
-      <div className="container">
-        {data &&
-          data.map((obj) => (
-            <Fade cascade left>
-              <div className="img-container">
-                <img src={obj.icon} alt="application-icon" />
-                <p>{obj.text}</p>
+      <Section
+        id={"section-applications"}
+        className="section-applications-main"
+      >
+        <div className="top-container">
+          <Fade left>
+            <div className="right-section">
+              <p className="title1">Applications</p>
+              <div className="container">
+                {applicationData &&
+                  applicationData.map((obj) => (
+                    <Fade cascade left>
+                      <div className="img-container">
+                        <img src={obj.icon} alt="application-icon" />
+                        <p>{obj.text}</p>
+                      </div>
+                    </Fade>
+                  ))}
               </div>
-            </Fade>
-          ))}
-      </div>
-
-      <div className="highlights-container">
-        <p className="highlights-title">HIGHLIGHTS</p>
-        <div className="highlights-subtitle-container">
-          <p>
-            <img className="img-leaf" src={leaf} alt="Leaf" />
-            Total Waste solutions at your doorstep
-          </p>
+            </div>
+          </Fade>
         </div>
-      </div>
-    </Section>
+        <div className="bottom-container">
+          <SectionHighlightsV2 data={data} />
+        </div>
+      </Section>
+    </div>
   );
 }
 
-export default SectionApplications;
+export default Applications;

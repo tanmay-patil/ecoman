@@ -2,9 +2,8 @@ import "./index.scss";
 import {
   machine2,
   country,
-  flag,
   installation,
-  background,
+  background4,
   reduce,
   noiseless,
   odorless,
@@ -46,7 +45,7 @@ function SectionCommercial() {
   return (
     <div
       style={{
-        backgroundImage: `url(${background})`,
+        backgroundImage: `url(${background4})`,
         backgroundRepeat: "round",
         backgroundSize: "cover",
       }}
