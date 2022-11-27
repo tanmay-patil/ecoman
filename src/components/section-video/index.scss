@@ -1,58 +1,49 @@
 @use "variables";
 @import "mixins";
 
-.section-video-main {
-  background: #e5e8e7;
+.section-technology-main {
+  height: 83vh;
+  background: inherit !important;
 
-  @include mobile {
-    min-height: 89vh;
+  .top-container {
+    height: 80%;
+    justify-content: center;
 
-    .title {
-      font-family: TitiliumWeb-Light;
-      font-size: 30px;
-      color: #449841;
-      text-align: center;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    flex-direction: column;
+
+    .img-machine {
+      margin-top: 100px;
+      height: 300px;
+    }
+
+    .right-section {
+      padding-left: 100px;
       z-index: 1;
-    }
 
-    .img-process {
-      height: 500px;
-      margin-top: 30px;
-    }
-
-    video {
-      width: 330px;
-      height: 200px;
-      margin-top: 30px;
-    }
-  }
-
-  @include desktop {
-    min-height: 97vh;
-
-    .title {
-      font-family: TitiliumWeb-Light;
-      font-size: 40px;
-      color: #449841;
-      text-align: center;
-      z-index: 1;
-    }
-
-    .img-process {
-      margin-top: 50px;
-      height: 1100px;
-      border-radius: 30px;
+      .title1 {
+        font-family: Avenir-Regular;
+        font-weight: bold;
+        font-size: 20px;
+        color: white;
+        margin-bottom: 30px;
+      }
     }
 
     .view-btn {
+      border-radius: 5px;
       padding: 15px;
       font-size: 15px;
-      background: inherit;
-      border: 1pt solid #428d3f;
-      color: #428d3f;
+      background: rgb(255 255 255 / 0%);
+      border: 1px solid white;
+      color: white;
       transition: 0.4s;
       cursor: pointer;
       margin-top: 30px;
+      float: right;
 
       &:hover {
         border: 2pt solid black;
@@ -60,5 +51,13 @@
         transition: 0.4s;
       }
     }
+  }
+
+  .bottom-container {
+    background-color: #1d1d1d41;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

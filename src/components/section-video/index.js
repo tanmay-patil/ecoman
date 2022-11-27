@@ -1,30 +1,73 @@
 import "./index.scss";
+import {
+  actual_video,
+  country,
+  installation,
+  background5,
+  reduce,
+  noiseless,
+  odorless,
+} from "common/common-imports";
 import Section from "components/section";
 import { Fade } from "react-reveal";
-import { actual_video } from "common/common-imports";
+import SectionHighlightsV2 from "components/highlights-section-v2";
 
-function SectionVideo() {
-  const sectionName = "video";
+function SectionTechnology() {
+  const data = {
+    row1: [
+      {
+        icon: installation,
+        label: "100% Fully Automatic",
+      },
+      {
+        icon: country,
+        label: "24 Hours Composting",
+      },
+      {
+        icon: reduce,
+        label: "90% Volume Reduction",
+      },
+      {
+        icon: noiseless,
+        label: "Noiseless",
+      },
+      {
+        icon: odorless,
+        label: "Odorless",
+      },
+      {
+        icon: installation,
+        label: "Maintenance Free",
+      },
+    ],
+  };
 
   return (
-    <Section
-      id={`section-${sectionName}`}
-      className={`section-${sectionName}-main`}
-      center
+    <div
+      style={{
+        backgroundImage: `url(${background5})`,
+        backgroundRepeat: "round",
+        backgroundSize: "cover",
+      }}
     >
-      <Fade right opposite>
-        {/* <p className="title">ACTUAL WORKING</p> */}
-      </Fade>
-      <video width="950" height="600" controls>
-        <source src={actual_video} type="video/mp4" />
-      </video>
-      <Fade top>
-        <a href="#section-technology">
-          <button className="view-btn">VIEW OUR TECHNOLOGY</button>
-        </a>
-      </Fade>
-    </Section>
+      <Section id={"section-technology"} className="section-technology-main">
+        <div className="top-container">
+          <Fade left>
+            <div className="right-section">
+              <p className="title1">Actual working</p>
+            </div>
+          </Fade>
+
+          <video width="850" height="500" controls>
+            <source src={actual_video} type="video/mp4" />
+          </video>
+        </div>
+        <div className="bottom-container">
+          <SectionHighlightsV2 data={data} />
+        </div>
+      </Section>
+    </div>
   );
 }
 
-export default SectionVideo;
+export default SectionTechnology;
