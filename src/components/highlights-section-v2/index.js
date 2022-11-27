@@ -1,10 +1,5 @@
 import "./index.scss";
-import { machine, leaves2, leaves3 } from "common/common-imports";
 import Section from "components/section";
-import { Fade } from "react-reveal";
-import { isMobile } from "react-device-detect";
-import { leaf } from "common/common-imports";
-import HighlightSection from "components/highlights-section";
 
 function SectionHighlightsV2({ data }) {
   return (

@@ -33,6 +33,7 @@ function SectionTagline() {
       style={{
         backgroundImage: `url(${background})`,
         backgroundRepeat: "round",
+        backgroundSize: "cover",
       }}
     >
       <Section id={"section-tagline"} className="section-tagline-main">

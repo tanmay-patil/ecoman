@@ -1,78 +1,85 @@
 import "./index.scss";
+import {
+  machine2,
+  country,
+  flag,
+  installation,
+  background,
+  reduce,
+  noiseless,
+  odorless,
+} from "common/common-imports";
 import Section from "components/section";
-import { machine2 } from "common/common-imports";
 import { Fade } from "react-reveal";
-import HighlightSection from "components/highlights-section";
+import SectionHighlightsV2 from "components/highlights-section-v2";
 
 function SectionCommercial() {
-  const dataRow1 = [
-    {
-      text1: "100%",
-      text2: "FULLY Automatic",
-      text3: "",
-    },
-    {
-      text1: "24",
-      text2: "HOURS Composting",
-      text3: "",
-    },
-    {
-      text1: "90%",
-      text2: "Volume reduction",
-      text3: "",
-    },
-  ];
-  const dataRow2 = [
-    {
-      text1: "",
-      text2: "NOISELESS",
-      text3: "",
-    },
-    {
-      text1: "",
-      text2: "ODORLESS",
-      text3: "",
-    },
-    {
-      text1: "",
-      text2: "MAINTENANCE FREE",
-      text3: "",
-    },
-  ];
+  const data = {
+    row1: [
+      {
+        icon: installation,
+        label: "100% Fully Automatic",
+      },
+      {
+        icon: country,
+        label: "24 Hours Composting",
+      },
+      {
+        icon: reduce,
+        label: "90% Volume Reduction",
+      },
+      {
+        icon: noiseless,
+        label: "Noiseless",
+      },
+      {
+        icon: odorless,
+        label: "Odorless",
+      },
+      {
+        icon: installation,
+        label: "Maintenance Free",
+      },
+    ],
+  };
 
   return (
-    <Section id={"section-commercial"} className="section-commercial-main">
-      <div className="content">
-        <div className="inner-content">
-          <div className="left-section">
-            <Fade left>
-              <p className="title">
+    <div
+      style={{
+        backgroundImage: `url(${background})`,
+        backgroundRepeat: "round",
+        backgroundSize: "cover",
+      }}
+    >
+      <Section id={"section-commercial"} className="section-commercial-main">
+        <div className="top-container">
+          <Fade left>
+            <div className="right-section">
+              <p className="title1">
                 World’s best Commercial Composting Machine
               </p>
-            </Fade>
-            <Fade top>
-              <p className="text">
+              <p className="title2">
+                {" "}
                 We produce world’s best Commercial Composting Machines for
                 onsite waste management
+                <br />
+                <Fade left>
+                  <a href="#section-products">
+                    <button className="view-btn">VIEW OUR PRODUCTS</button>
+                  </a>
+                </Fade>
               </p>
-            </Fade>
-            <Fade top>
-              <a href="#section-products">
-                <button className="view-btn">VIEW OUR PRODUCTS</button>
-              </a>
-            </Fade>
-          </div>
-          <div className="right-section">
-            <Fade top>
-              <img src={machine2} className="img-machine2" alt="Leaves" />
-            </Fade>
-          </div>
+            </div>
+          </Fade>
+          <Fade left>
+            <img src={machine2} className="img-machine" alt="Machine" />
+          </Fade>
         </div>
-        <div style={{ marginTop: "-166px", width: "100%" }}>
-          <HighlightSection data={dataRow1} dataRow2={dataRow2} />
+        <div className="bottom-container">
+          <SectionHighlightsV2 data={data} />
         </div>
-      </div>
-    </Section>
+      </Section>
+    </div>
   );
 }
 
