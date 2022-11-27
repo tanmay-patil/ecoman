@@ -12,7 +12,6 @@ import {
 import Section from "components/section";
 import { Fade } from "react-reveal";
 import SectionHighlightsV2 from "components/highlights-section-v2";
-import { PARA_DATA_DESKTOP } from "./constants";
 
 function Applications() {
   const data = {
