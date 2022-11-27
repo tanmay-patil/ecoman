@@ -1,67 +1,75 @@
 import "./index.scss";
+import {
+  leaf,
+  country,
+  flag,
+  installation,
+  background2,
+} from "common/common-imports";
 import Section from "components/section";
 import { Fade } from "react-reveal";
-import { leaf } from "common/common-imports";
-import { PARA_DATA_DESKTOP, PARA_DATA_MOBILE } from "./constants";
-import { isMobile } from "react-device-detect";
+import SectionHighlightsV2 from "components/highlights-section-v2";
+import { PARA_DATA_DESKTOP } from "./constants";
 
 function SectionProfile() {
-  const sectionName = "profile";
-
-  const data = isMobile ? PARA_DATA_MOBILE : PARA_DATA_DESKTOP;
+  const data = {
+    row1: [
+      {
+        href: "#section-clients",
+        icon: installation,
+        label: "Industries",
+      },
+      {
+        href: "#section-builderClients",
+        icon: country,
+        label: "Builders",
+      },
+      {
+        href: "#section-hotelClients",
+        icon: flag,
+        label: "Hotels",
+      },
+      {
+        href: "#section-govtClients",
+        icon: flag,
+        label: "Government",
+      },
+    ],
+  };
 
   return (
-    <Section
-      id={`section-${sectionName}`}
-      className={`section-${sectionName}-main`}
-      center
+    <div
+      style={{
+        backgroundImage: `url(${background2})`,
+        backgroundRepeat: "round",
+        backgroundSize: "cover",
+      }}
     >
-      <Fade right opposite>
-        <p className="title">ABOUT US</p>
-      </Fade>
-      <div className="container">
-        <p className="text-container">
-          {data.map((obj, index) => (
-            <Fade right duration={500 + (index + 1) * 200}>
-              <p className="para">
-                <img className="img-leaf" src={leaf} alt="Leaf" />
-                {obj.text}
+      <Section id={"section-profile"} className="section-profile-main">
+        <div className="top-container">
+          <Fade left>
+            <div className="right-section">
+              <p className="title1">About US</p>
+              <p className="title2">
+                <p className="text-container">
+                  {PARA_DATA_DESKTOP.map((obj, index) => (
+                    <Fade left duration={500 + (index + 1) * 200}>
+                      <p className="para">
+                        <img className="img-leaf" src={leaf} alt="Leaf" />
+                        {obj.text}
+                      </p>
+                    </Fade>
+                  ))}
+                </p>
               </p>
-            </Fade>
-          ))}
-        </p>
-      </div>
-
-      <div className="highlights-container">
-        <p className="highlights-title">CLIENT LINKS</p>
-        <div className="highlights-subtitle-container">
-          <p>
-            <a href="#section-clients">
-              <img className="img-leaf" src={leaf} alt="Leaf" />
-              Industries
-            </a>
-          </p>
-          <p>
-            <a href="#section-builderClients">
-              <img className="img-leaf" src={leaf} alt="Leaf" />
-              Builders
-            </a>
-          </p>
-          <p>
-            <a href="#section-hotelClients">
-              <img className="img-leaf" src={leaf} alt="Leaf" />
-              Hotels
-            </a>
-          </p>
-          <p>
-            <a href="#section-govtClients">
-              <img className="img-leaf" src={leaf} alt="Leaf" />
-              Government
-            </a>
-          </p>
+            </div>
+          </Fade>
         </div>
-      </div>
-    </Section>
+        <div className="bottom-container">
+          <SectionHighlightsV2 data={data} />
+        </div>
+      </Section>
+    </div>
   );
 }
 

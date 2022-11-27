@@ -7,14 +7,25 @@ function SectionHighlightsV2({ data }) {
       {data &&
         data &&
         data.row1 &&
-        data.row1.map((obj) => (
-          <div className="highlight-element">
-            <div className="highlight-icon">
-              <img src={obj.icon} className="img-icon" alt="Machine" />
+        data.row1.map((obj) =>
+          obj.href ? (
+            <a href={obj.href}>
+              <div className="highlight-element">
+                <div className="highlight-icon">
+                  <img src={obj.icon} className="img-icon" alt="Machine" />
+                </div>
+                <div className="highlight-label">{obj.label}</div>
+              </div>
+            </a>
+          ) : (
+            <div className="highlight-element">
+              <div className="highlight-icon">
+                <img src={obj.icon} className="img-icon" alt="Machine" />
+              </div>
+              <div className="highlight-label">{obj.label}</div>
             </div>
-            <div className="highlight-label">{obj.label}</div>
-          </div>
-        ))}
+          )
+        )}
       {data &&
         data &&
         data.row2 &&

@@ -28,6 +28,7 @@ import installation from "assets/highlights/installation.png";
 import country from "assets/highlights/country.png";
 import flag from "assets/highlights/flag.png";
 import background from "assets/highlights/background.jpeg";
+import background2 from "assets/highlights/background2.jpeg";
 import reduce from "assets/highlights/reduce.png";
 import noiseless from "assets/highlights/noiseless.png";
 import odorless from "assets/highlights/odorless.png";
@@ -59,6 +60,7 @@ export {
   country,
   flag,
   background,
+  background2,
   reduce,
   noiseless,
   odorless,
