@@ -54,7 +54,7 @@ function SectionTechnology() {
         <div className="top-container">
           <Fade left>
             <div className="right-section">
-              <p className="title1">Actual working</p>
+              <p className="title1">ACTUAL WORKING</p>
             </div>
           </Fade>
 
@@ -62,9 +62,9 @@ function SectionTechnology() {
             <source src={actual_video} type="video/mp4" />
           </video>
         </div>
-        <div className="bottom-container">
+        {/* <div className="bottom-container">
           <SectionHighlightsV2 data={data} />
-        </div>
+        </div> */}
       </Section>
     </div>
   );

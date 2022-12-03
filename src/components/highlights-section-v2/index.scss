@@ -1,6 +1,12 @@
 @use "variables";
 @import "mixins";
 
+#section-highlights {
+  .section-main {
+    margin-bottom: 0px !important;
+  }
+}
+
 .section-highlights-main {
   display: flex;
   background-color: inherit;

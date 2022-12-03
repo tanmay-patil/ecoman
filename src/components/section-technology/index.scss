@@ -6,7 +6,7 @@
   background: inherit !important;
 
   .top-container {
-    height: 80%;
+    height: 70%;
     justify-content: center;
 
     display: flex;
@@ -25,6 +25,7 @@
       z-index: 1;
 
       .title1 {
+        margin-top: 40px;
         font-family: Avenir-Regular;
         font-weight: bold;
         font-size: 20px;
@@ -55,7 +56,7 @@
 
   .bottom-container {
     background-color: #1d1d1d41;
-    height: 20%;
+    height: 30%;
     display: flex;
     justify-content: center;
     align-items: center;

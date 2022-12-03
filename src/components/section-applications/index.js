@@ -65,7 +65,7 @@ function Applications() {
         <div className="top-container">
           <Fade left>
             <div className="right-section">
-              <p className="title1">Applications</p>
+              <p className="title1">APPLICATIONS</p>
               <div className="container">
                 {applicationData &&
                   applicationData.map((obj) => (

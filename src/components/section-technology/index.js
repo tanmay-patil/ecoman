@@ -54,11 +54,11 @@ function SectionTechnology() {
         <div className="top-container">
           <Fade left>
             <div className="right-section">
-              <p className="title1">Technology</p>
+              <p className="title1">TECHNOLOGY</p>
             </div>
           </Fade>
 
-          <video width="850" height="500" controls>
+          <video width="700" height="400" controls>
             <source src={technical_video} type="video/mp4" />
           </video>
         </div>

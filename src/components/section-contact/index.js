@@ -6,7 +6,7 @@ function SectionContact() {
   return (
     <Section id={"section-contact"} className="section-contact-main" center>
       <Fade left>
-        <p className="main-title">Contact Us</p>
+        <p className="main-title">CONTACT US</p>
       </Fade>
 
       <div className="container">

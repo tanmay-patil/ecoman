@@ -49,7 +49,7 @@ function SectionProfile() {
         <div className="top-container">
           <Fade left>
             <div className="right-section">
-              <p className="title1">About US</p>
+              <p className="title1">ABOUT US</p>
               <p className="title2">
                 <p className="text-container">
                   {PARA_DATA_DESKTOP.map((obj, index) => (

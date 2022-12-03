@@ -59,7 +59,7 @@ function SectionProducts() {
   return (
     <Section id={"section-products"} className="section-products-main" center>
       <Fade left>
-        <p className="title">Products</p>
+        <p className="title">PRODUCTS</p>
       </Fade>
 
       <div className="container">
