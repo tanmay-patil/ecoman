@@ -36,6 +36,11 @@ import background5 from "assets/highlights/background5.jpeg";
 import reduce from "assets/highlights/reduce.png";
 import noiseless from "assets/highlights/noiseless.png";
 import odorless from "assets/highlights/odorless.png";
+import hotel from "assets/highlights/hotel.png";
+import government2 from "assets/highlights/government.png";
+
+// Background images
+import BackgroundImage8 from "assets/images/backgrounds/img9.png";
 
 export {
   logo,
@@ -63,6 +68,8 @@ export {
   installation,
   country,
   flag,
+  hotel,
+  government2,
   backgroundHand,
   background,
   background2,
@@ -72,4 +79,5 @@ export {
   reduce,
   noiseless,
   odorless,
+  BackgroundImage8,
 };

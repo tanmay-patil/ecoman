@@ -2,9 +2,10 @@ import "./index.scss";
 import {
   leaf,
   country,
-  flag,
   installation,
   background2,
+  hotel,
+  government2,
 } from "common/common-imports";
 import Section from "components/section";
 import { Fade } from "react-reveal";
@@ -26,12 +27,12 @@ function SectionProfile() {
       },
       {
         href: "#section-hotelClients",
-        icon: flag,
+        icon: hotel,
         label: "Hotels",
       },
       {
         href: "#section-govtClients",
-        icon: flag,
+        icon: government2,
         label: "Government",
       },
     ],

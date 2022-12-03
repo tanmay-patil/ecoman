@@ -1,7 +1,6 @@
 import builder_client1 from "assets/images/clients/builder/1.png";
 import builder_client2 from "assets/images/clients/builder/2.png";
 import builder_client3 from "assets/images/clients/builder/3.png";
-import builder_client4 from "assets/images/clients/builder/4.png";
 import builder_client5 from "assets/images/clients/builder/5.png";
 import builder_client6 from "assets/images/clients/builder/6.png";
 import builder_client7 from "assets/images/clients/builder/7.png";
@@ -21,7 +20,6 @@ export {
   builder_client1,
   builder_client2,
   builder_client3,
-  builder_client4,
   builder_client5,
   builder_client6,
   builder_client7,
