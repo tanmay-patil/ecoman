@@ -50,7 +50,7 @@ function SectionTechnology() {
         backgroundSize: "cover",
       }}
     >
-      <Section id={"section-technology"} className="section-technology-main">
+      <Section id={"section-actual"} className="section-actual-main">
         <div className="top-container">
           <Fade left>
             <div className="right-section">
@@ -58,7 +58,7 @@ function SectionTechnology() {
             </div>
           </Fade>
 
-          <video width="850" height="500" controls>
+          <video width="650" height="400" controls>
             <source src={actual_video} type="video/mp4" />
           </video>
         </div>

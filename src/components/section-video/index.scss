@@ -1,12 +1,12 @@
 @use "variables";
 @import "mixins";
 
-.section-technology-main {
+.section-actual-main {
   height: 83vh;
   background: inherit !important;
 
   .top-container {
-    height: 80%;
+    height: 90%;
     justify-content: center;
 
     display: flex;
@@ -21,14 +21,13 @@
     }
 
     .right-section {
-      padding-left: 100px;
       z-index: 1;
 
       .title1 {
-        margin-top: 30px;
+        margin-top: 70px;
         font-family: Avenir-Regular;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 25px;
         color: white;
         margin-bottom: 30px;
       }

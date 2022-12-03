@@ -20,13 +20,12 @@
     }
 
     .right-section {
-      padding-left: 100px;
       z-index: 1;
 
       .title1 {
         font-family: Avenir-Regular;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 25px;
         color: #a78641;
         text-align: center;
       }
@@ -82,9 +81,16 @@
 
   .bottom-container {
     background-color: #1d1d1d41;
-    height: 20%;
+    height: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .single-highlight-text {
+      color: white;
+      font-family: Avenir-Regular;
+      font-weight: bold;
+      font-size: 20px;
+    }
   }
 }

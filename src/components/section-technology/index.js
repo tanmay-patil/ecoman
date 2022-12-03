@@ -58,13 +58,13 @@ function SectionTechnology() {
             </div>
           </Fade>
 
-          <video width="700" height="400" controls>
+          <video width="600" height="400" controls>
             <source src={technical_video} type="video/mp4" />
           </video>
         </div>
-        <div className="bottom-container">
+        {/* <div className="bottom-container">
           <SectionHighlightsV2 data={data} />
-        </div>
+        </div> */}
       </Section>
     </div>
   );

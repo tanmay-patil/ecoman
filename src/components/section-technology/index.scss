@@ -6,7 +6,7 @@
   background: inherit !important;
 
   .top-container {
-    height: 70%;
+    height: 90%;
     justify-content: center;
 
     display: flex;
@@ -21,14 +21,13 @@
     }
 
     .right-section {
-      padding-left: 100px;
       z-index: 1;
 
       .title1 {
         margin-top: 40px;
         font-family: Avenir-Regular;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 25px;
         color: white;
         margin-bottom: 30px;
       }

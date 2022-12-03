@@ -8,7 +8,7 @@ import loader from "assets/images/loader.gif";
 import process from "assets/images/process.png";
 import leaf from "assets/images/leaf.png";
 import leaf_circle from "assets/images/leaf-circle.png";
-import actual_video from "assets/videos/actual-video.mp4";
+import actual_video from "assets/videos/actual-video.mov";
 import technical_video from "assets/videos/technical-video.mp4";
 
 import government from "assets/svg/government.svg";
@@ -27,6 +27,7 @@ import product2 from "assets/images/products/product-2.png";
 import installation from "assets/highlights/installation.png";
 import country from "assets/highlights/country.png";
 import flag from "assets/highlights/flag.png";
+import backgroundHand from "assets/highlights/background-hand.png";
 import background from "assets/highlights/background.jpeg";
 import background2 from "assets/highlights/background2.jpeg";
 import background3 from "assets/highlights/background3.jpeg";
@@ -62,6 +63,7 @@ export {
   installation,
   country,
   flag,
+  backgroundHand,
   background,
   background2,
   background3,

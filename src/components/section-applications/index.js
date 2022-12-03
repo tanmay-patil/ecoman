@@ -81,7 +81,10 @@ function Applications() {
           </Fade>
         </div>
         <div className="bottom-container">
-          <SectionHighlightsV2 data={data} />
+          {/* <SectionHighlightsV2 data={data} /> */}
+          <p className="single-highlight-text">
+            Total Waste solution at your doorstep
+          </p>
         </div>
       </Section>
     </div>
