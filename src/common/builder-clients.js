@@ -15,6 +15,7 @@ import builder_client15 from "assets/images/clients/builder/15.png";
 import builder_client16 from "assets/images/clients/builder/16.png";
 import builder_client17 from "assets/images/clients/builder/17.png";
 import builder_client18 from "assets/images/clients/builder/18.png";
+import builder_client19 from "assets/images/clients/builder/19.png";
 
 export {
   builder_client1,
@@ -34,4 +35,5 @@ export {
   builder_client16,
   builder_client17,
   builder_client18,
+  builder_client19,
 };

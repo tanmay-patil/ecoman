@@ -18,6 +18,8 @@ import client17 from "assets/images/clients/industrial/17.jpg";
 import client18 from "assets/images/clients/industrial/18.jpg";
 import client19 from "assets/images/clients/industrial/19.jpg";
 import client20 from "assets/images/clients/industrial/20.jpg";
+import client21 from "assets/images/clients/industrial/21.png";
+import client22 from "assets/images/clients/industrial/22.png";
 
 export {
   client1,
@@ -40,4 +42,6 @@ export {
   client18,
   client19,
   client20,
+  client21,
+  client22,
 };

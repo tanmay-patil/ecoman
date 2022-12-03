@@ -33,6 +33,7 @@ import background2 from "assets/highlights/background2.jpeg";
 import background3 from "assets/highlights/background3.jpeg";
 import background4 from "assets/highlights/background4.jpeg";
 import background5 from "assets/highlights/background5.jpeg";
+import background6 from "assets/highlights/background6.png";
 import reduce from "assets/highlights/reduce.png";
 import noiseless from "assets/highlights/noiseless.png";
 import odorless from "assets/highlights/odorless.png";
@@ -76,6 +77,7 @@ export {
   background3,
   background4,
   background5,
+  background6,
   reduce,
   noiseless,
   odorless,

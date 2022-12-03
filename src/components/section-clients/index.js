@@ -22,6 +22,8 @@ import {
   client18,
   client19,
   client20,
+  client21,
+  client22,
 } from "common/industrial-clients";
 import { isMobile } from "react-device-detect";
 import {
@@ -57,6 +59,7 @@ import {
   builder_client16,
   builder_client17,
   builder_client18,
+  builder_client19,
 } from "common/builder-clients";
 import {
   hotels_client1,
@@ -78,6 +81,7 @@ import {
   hotels_client17,
   hotels_client18,
   hotels_client19,
+  hotels_client20,
 } from "common/hotel-clients";
 
 function SectionClients() {
@@ -102,6 +106,8 @@ function SectionClients() {
     client18,
     client19,
     client20,
+    client21,
+    client22,
   ];
 
   const govtClients = [
@@ -138,6 +144,7 @@ function SectionClients() {
     builder_client16,
     builder_client17,
     builder_client18,
+    builder_client19,
   ];
 
   const hotelsClients = [
@@ -160,6 +167,7 @@ function SectionClients() {
     hotels_client17,
     hotels_client18,
     hotels_client19,
+    hotels_client20,
   ];
 
   return (

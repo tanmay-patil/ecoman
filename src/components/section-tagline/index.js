@@ -6,6 +6,7 @@ import {
   installation,
   background,
   BackgroundImage8,
+  background6,
 } from "common/common-imports";
 import Section from "components/section";
 import { Fade } from "react-reveal";
@@ -32,7 +33,7 @@ function SectionTagline() {
   return (
     <div
       style={{
-        backgroundImage: `url(${BackgroundImage8})`,
+        backgroundImage: `url(${background6})`,
         backgroundRepeat: "round",
         backgroundSize: "cover",
       }}

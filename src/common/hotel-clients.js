@@ -17,6 +17,7 @@ import hotels_client16 from "assets/images/clients/hotels/16.png";
 import hotels_client17 from "assets/images/clients/hotels/17.png";
 import hotels_client18 from "assets/images/clients/hotels/18.png";
 import hotels_client19 from "assets/images/clients/hotels/19.png";
+import hotels_client20 from "assets/images/clients/hotels/20.png";
 
 export {
   hotels_client1,
@@ -38,4 +39,5 @@ export {
   hotels_client17,
   hotels_client18,
   hotels_client19,
+  hotels_client20,
 };
