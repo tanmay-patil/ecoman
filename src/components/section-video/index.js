@@ -3,7 +3,7 @@ import {
   actual_video,
   country,
   installation,
-  background5,
+  BackgroundImage12,
   reduce,
   noiseless,
   odorless,
@@ -45,8 +45,8 @@ function SectionTechnology() {
   return (
     <div
       style={{
-        backgroundImage: `url(${background5})`,
-        backgroundRepeat: "round",
+        backgroundImage: `url(${BackgroundImage12})`,
+        // backgroundRepeat: "round",
         backgroundSize: "cover",
       }}
     >

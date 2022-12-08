@@ -3,7 +3,7 @@ import {
   leaf,
   country,
   installation,
-  background2,
+  BackgroundImage13,
   hotel,
   government2,
 } from "common/common-imports";
@@ -41,8 +41,8 @@ function SectionProfile() {
   return (
     <div
       style={{
-        backgroundImage: `url(${background2})`,
-        backgroundRepeat: "round",
+        backgroundImage: `url(${BackgroundImage13})`,
+        // backgroundRepeat: "round",
         backgroundSize: "cover",
       }}
     >

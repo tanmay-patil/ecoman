@@ -1,7 +1,7 @@
 import "./index.scss";
 import {
   installation,
-  background3,
+  BackgroundImage11,
   government,
   builder,
   hospital,
@@ -11,7 +11,6 @@ import {
 } from "common/common-imports";
 import Section from "components/section";
 import { Fade } from "react-reveal";
-import SectionHighlightsV2 from "components/highlights-section-v2";
 
 function Applications() {
   const data = {
@@ -53,8 +52,8 @@ function Applications() {
   return (
     <div
       style={{
-        backgroundImage: `url(${background3})`,
-        backgroundRepeat: "round",
+        backgroundImage: `url(${BackgroundImage11})`,
+        // backgroundRepeat: "round",
         backgroundSize: "cover",
       }}
     >

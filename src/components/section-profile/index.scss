@@ -9,6 +9,12 @@
     height: 80%;
     justify-content: center;
 
+    .text-container {
+      background: #00000061;
+      padding: 1px;
+      border-radius: 10px;
+    }
+
     display: flex;
     align-items: center;
     padding-left: 50px;
@@ -29,6 +35,9 @@
         font-size: 25px;
         color: white;
         text-align: center;
+        background: #00000061;
+        padding: 1px;
+        border-radius: 10px;
       }
 
       .title2 {

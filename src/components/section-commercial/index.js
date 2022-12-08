@@ -3,7 +3,7 @@ import {
   machine2,
   country,
   installation,
-  background4,
+  BackgroundImage10,
   reduce,
   noiseless,
   odorless,
@@ -45,8 +45,8 @@ function SectionCommercial() {
   return (
     <div
       style={{
-        backgroundImage: `url(${background4})`,
-        backgroundRepeat: "round",
+        backgroundImage: `url(${BackgroundImage10})`,
+        // backgroundRepeat: "round",
         backgroundSize: "cover",
       }}
     >
