@@ -4,8 +4,6 @@ import {
   country,
   flag,
   installation,
-  background,
-  BackgroundImage8,
   background6,
 } from "common/common-imports";
 import Section from "components/section";

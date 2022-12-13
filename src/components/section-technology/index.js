@@ -4,13 +4,13 @@ import {
   country,
   installation,
   background4,
+  BackgroundImage14,
   reduce,
   noiseless,
   odorless,
 } from "common/common-imports";
 import Section from "components/section";
 import { Fade } from "react-reveal";
-import SectionHighlightsV2 from "components/highlights-section-v2";
 
 function SectionTechnology() {
   const data = {
@@ -45,8 +45,7 @@ function SectionTechnology() {
   return (
     <div
       style={{
-        backgroundImage: `url(${background4})`,
-        backgroundRepeat: "round",
+        backgroundImage: `url(${BackgroundImage14})`,
         backgroundSize: "cover",
       }}
     >

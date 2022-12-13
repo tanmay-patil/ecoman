@@ -46,6 +46,7 @@ import BackgroundImage10 from "assets/images/backgrounds/img10.png";
 import BackgroundImage11 from "assets/images/backgrounds/img11.png";
 import BackgroundImage12 from "assets/images/backgrounds/img12.png";
 import BackgroundImage13 from "assets/images/backgrounds/img13.png";
+import BackgroundImage14 from "assets/images/backgrounds/img14.png";
 
 export {
   logo,
@@ -90,4 +91,5 @@ export {
   BackgroundImage11,
   BackgroundImage12,
   BackgroundImage13,
+  BackgroundImage14,
 };
