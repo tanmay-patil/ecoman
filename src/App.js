@@ -15,6 +15,20 @@ import SectionTechnology from "components/section-technology";
 import SectionContact from "components/section-contact";
 
 function App() {
+  return (
+    <div
+      style={{
+        width: "100%",
+        height: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <h3> 404 Page Not Found. </h3>
+    </div>
+  );
+
   const [showLoader, setShowLoader] = useState(true);
 
   useEffect(() => {
